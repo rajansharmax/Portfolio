@@ -37,11 +37,6 @@ const Head = () => {
       <meta property="og:url" content="Canonical link preview URL"></meta>
       <link
         type="text/css"
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        type="text/css"
         href={"/assets/css/vendors/bootstrap.min.css"}
         rel="stylesheet"
       />
