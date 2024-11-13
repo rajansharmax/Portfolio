@@ -472,7 +472,7 @@ export default function Home() {
                     <div className="text-center pt-60">
                       <p className="text-300">
                         Excited to take on <span className="text-dark">new projects</span> and collaborate. <br />
-                        Let's chat about your ideas. <a href="#" className="text-primary-2">Reach out!</a>
+                        Let&apos;s chat about your ideas. <a href="#" className="text-primary-2">Reach out!</a>
                       </p>
                     </div>
                   </div>
