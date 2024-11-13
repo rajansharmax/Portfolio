@@ -121,7 +121,7 @@ const Header = () => {
                         <div className="mobile-header-wrapper-inner">
                             <div className="mobile-header-logo">
                                 <a className="d-flex main-logo align-items-center d-inline-flex" href="index.html">
-                                    <Image src="/src/assets/imgs/footer-1/logo.svg" alt="zelio" width={40} height={40} />
+                                    <Image src={"/assets/imgs/footer-1/logo.svg"} alt="zelio" width={40} height={40} />
                                     <span className="fs-4 ms-2 text-dark">rajansharmax</span>
                                 </a>
                                 <div className="burger-icon burger-icon-white border rounded-3">
