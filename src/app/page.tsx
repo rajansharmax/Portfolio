@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
                     <div className="position-relative mb-lg-0 mb-5">
                       <Image src={"/assets/imgs/home-page-2/hero-1/people.png"} alt="zelio" width={500} height={500} />
                       <div className="position-absolute end-0 top-100 translate-middle-y icon-decorate">
-                        <Image src={"/assets/imgs/home-page-2/hero-1/icon.svg"} alt="zelio" width={500} height={500} />
+                        <Image src={"/assets/imgs/home-page-2/hero-1/icon.svg"} alt="zelio" width={100} height={100} />
                       </div>
                     </div>
                   </div>
@@ -37,29 +38,29 @@ export default function Home() {
                           <div className="carouselTicker carouselTicker-left position-relative z-1 mt-lg-0 mt-8">
                             <ul className="carouselTicker__list ">
                               <li className="carouselTicker__item">
-                                <a href="#" className="brand-logo icon_60 icon-shape rounded-3">
-                                  <img src="assets/imgs/home-page-2/hero-1/icon-1.svg" alt="brand" />
-                                </a>
+                                <Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
+                                  <Image src="assets/imgs/home-page-2/hero-1/icon-1.svg" alt="brand" width={30} height={30} />
+                                </Link>
                               </li>
                               <li className="carouselTicker__item">
-                                <a href="#" className="brand-logo icon_60 icon-shape rounded-3">
-                                  <img src="assets/imgs/home-page-2/hero-1/icon-2.svg" alt="brand" />
-                                </a>
+                                <Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
+                                  <Image src="assets/imgs/home-page-2/hero-1/icon-2.svg" alt="brand" width={30} height={30} />
+                                </Link>
                               </li>
                               <li className="carouselTicker__item">
-                                <a href="#" className="brand-logo icon_60 icon-shape rounded-3">
-                                  <img src="assets/imgs/home-page-2/hero-1/icon-3.svg" alt="brand" />
-                                </a>
+                                <Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
+                                  <Image src="assets/imgs/home-page-2/hero-1/icon-3.svg" alt="brand" width={20} height={20} />
+                                </Link>
                               </li>
                               <li className="carouselTicker__item">
-                                <a href="#" className="brand-logo icon_60 icon-shape rounded-3">
-                                  <img src="assets/imgs/home-page-2/hero-1/icon-4.svg" alt="brand" />
-                                </a>
+                                <Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
+                                  <Image src="assets/imgs/home-page-2/hero-1/icon-4.svg" alt="brand" width={30} height={30} />
+                                </Link>
                               </li>
                               <li className="carouselTicker__item">
-                                <a href="#" className="brand-logo icon_60 icon-shape rounded-3">
-                                  <img src="assets/imgs/home-page-2/hero-1/icon-5.svg" alt="brand" />
-                                </a>
+                                <Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
+                                  <Image src="assets/imgs/home-page-2/hero-1/icon-5.svg" alt="brand" width={30} height={30} />
+                                </Link>
                               </li>
                             </ul>
                           </div>
@@ -68,10 +69,10 @@ export default function Home() {
                           <span className="fs-6 text-300 mb-2">...and more</span>
                         </div>
                       </div>
-                      <a href="assets/resume.pdf" className="btn me-2 text-300 ps-0 mt-4" target="_blank">
+                      <Link href="assets/resume.pdf" className="btn me-2 text-300 ps-0 mt-4" target="_blank">
                         <i className="ri-download-line text-primary-2"></i>
                         [ Download my CV ]
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -302,18 +303,18 @@ export default function Home() {
                           </div>
                         </div>
                         <div className="d-flex flex-column gap-2">
-                          <a href="#">
+                          <Link href="#">
                             <i className="ri-skype-fill"></i>
                             <span className="text-300">[skype] <span className="text-secondary-2">rajansharmax</span></span>
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link href="#">
                             <i className="ri-phone-fill"></i>
                             <span className="text-300">[phone] <span className="text-secondary-2">+1-234-567-8901</span></span>
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link href="#">
                             <i className="ri-mail-fill"></i>
                             <span className="text-300">[email] <span className="text-secondary-2">contact@rajansharmax</span></span>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -472,7 +473,7 @@ export default function Home() {
                     <div className="text-center pt-60">
                       <p className="text-300">
                         Excited to take on <span className="text-dark">new projects</span> and collaborate. <br />
-                        Let&apos;s chat about your ideas. <a href="#" className="text-primary-2">Reach out!</a>
+                        Let&apos;s chat about your ideas. <Link href="#" className="text-primary-2">Reach out!</Link>
                       </p>
                     </div>
                   </div>
@@ -507,7 +508,7 @@ export default function Home() {
                   <div className="row mt-5">
                     <div className="col-lg-4">
                       <div className="d-flex flex-column gap-2">
-                        <a href="#" className="technology border border-1 rounded-3 p-3">
+                        <Link href="#" className="technology border border-1 rounded-3 p-3">
                           <div className="d-flex align-items-center gap-2">
                             <img src="assets/imgs/home-page-2/experience/google.svg" alt="zelio" />
                             <div className="d-flex flex-column ms-2">
@@ -515,8 +516,8 @@ export default function Home() {
                               <span className="text-300">2018 - Present</span>
                             </div>
                           </div>
-                        </a>
-                        <a href="#" className="technology border border-1 rounded-3 p-3">
+                        </Link>
+                        <Link href="#" className="technology border border-1 rounded-3 p-3">
                           <div className="d-flex align-items-center gap-2">
                             <img src="assets/imgs/home-page-2/experience/twitter.svg" alt="zelio" />
                             <div className="d-flex flex-column ms-2">
@@ -524,8 +525,8 @@ export default function Home() {
                               <span className="text-300">2012 - 2015</span>
                             </div>
                           </div>
-                        </a>
-                        <a href="#" className="technology border border-1 rounded-3 p-3">
+                        </Link>
+                        <Link href="#" className="technology border border-1 rounded-3 p-3">
                           <div className="d-flex align-items-center gap-2">
                             <img src="assets/imgs/home-page-2/experience/amazon.svg" alt="zelio" />
                             <div className="d-flex flex-column ms-2">
@@ -533,8 +534,8 @@ export default function Home() {
                               <span className="text-300">2018 - Present</span>
                             </div>
                           </div>
-                        </a>
-                        <a href="#" className="technology border border-1 rounded-3 p-3">
+                        </Link>
+                        <Link href="#" className="technology border border-1 rounded-3 p-3">
                           <div className="d-flex align-items-center gap-2">
                             <img src="assets/imgs/home-page-2/experience/payPal.svg" alt="zelio" />
                             <div className="d-flex flex-column ms-2">
@@ -542,7 +543,7 @@ export default function Home() {
                               <span className="text-300">2010 - 2012</span>
                             </div>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="col-lg-8 ps-lg-5 mt-5 mt-lg-0">
@@ -553,11 +554,11 @@ export default function Home() {
                         <li className="text-dark mb-3">Collaborated with cross-functional teams to integrate new features seamlessly.</li>
                       </ul>
                       <div className="d-flex flex-wrap align-items-center gap-3 mt-7">
-                        <a href="#" className="text-300 border border-1 px-3 py-1">Python</a>
-                        <a href="#" className="text-300 border border-1 px-3 py-1">TensorFlow</a>
-                        <a href="#" className="text-300 border border-1 px-3 py-1">Angular</a>
-                        <a href="#" className="text-300 border border-1 px-3 py-1">Kubernetes</a>
-                        <a href="#" className="text-300 border border-1 px-3 py-1">GCP</a>
+                        <Link href="#" className="text-300 border border-1 px-3 py-1">Python</Link>
+                        <Link href="#" className="text-300 border border-1 px-3 py-1">TensorFlow</Link>
+                        <Link href="#" className="text-300 border border-1 px-3 py-1">Angular</Link>
+                        <Link href="#" className="text-300 border border-1 px-3 py-1">Kubernetes</Link>
+                        <Link href="#" className="text-300 border border-1 px-3 py-1">GCP</Link>
                       </div>
                     </div>
                   </div>
@@ -723,13 +724,13 @@ export default function Home() {
                                   </li>
                                 </ul>
                                 <div className="d-flex flex-wrap align-items-center gap-3 mt-7">
-                                  <a href="#" className="text-300 border-bottom border-1 px-2 pb-2 link-hover">
+                                  <Link href="#" className="text-300 border-bottom border-1 px-2 pb-2 link-hover">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                                       <path d="M11.0037 3.91421L2.39712 12.5208L0.98291 11.1066L9.5895 2.5H2.00373V0.5H13.0037V11.5H11.0037V3.91421Z" fill="#8F8F92" />
                                     </svg>
                                     Live Demo
-                                  </a>
-                                  <a href="#" className="text-300 border-bottom border-1 px-2 pb-2 link-hover">
+                                  </Link>
+                                  <Link href="#" className="text-300 border-bottom border-1 px-2 pb-2 link-hover">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                                       <path
                                         d="M12.001 2.5C6.47598 2.5 2.00098 6.975 2.00098 12.5C2.00098 16.925 4.86348 20.6625 8.83848 21.9875C9.33848 22.075 9.52598 21.775 9.52598 21.5125C9.52598 21.275 9.51348 20.4875 9.51348 19.65C7.00098 20.1125 6.35098 19.0375 6.15098 18.475C6.03848 18.1875 5.55098 17.3 5.12598 17.0625C4.77598 16.875 4.27598 16.4125 5.11348 16.4C5.90098 16.3875 6.46348 17.125 6.65098 17.425C7.55098 18.9375 8.98848 18.5125 9.56348 18.25C9.65098 17.6 9.91348 17.1625 10.201 16.9125C7.97598 16.6625 5.65098 15.8 5.65098 11.975C5.65098 10.8875 6.03848 9.9875 6.67598 9.2875C6.57598 9.0375 6.22598 8.0125 6.77598 6.6375C6.77598 6.6375 7.61348 6.375 9.52598 7.6625C10.326 7.4375 11.176 7.325 12.026 7.325C12.876 7.325 13.726 7.4375 14.526 7.6625C16.4385 6.3625 17.276 6.6375 17.276 6.6375C17.826 8.0125 17.476 9.0375 17.376 9.2875C18.0135 9.9875 18.401 10.875 18.401 11.975C18.401 15.8125 16.0635 16.6625 13.8385 16.9125C14.201 17.225 14.5135 17.825 14.5135 18.7625C14.5135 20.1 14.501 21.175 14.501 21.5125C14.501 21.775 14.6885 22.0875 15.1885 21.9875C19.259 20.6133 21.9999 16.7963 22.001 12.5C22.001 6.975 17.526 2.5 12.001 2.5Z"
@@ -737,7 +738,7 @@ export default function Home() {
                                       />
                                     </svg>
                                     View on Github
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
@@ -777,13 +778,13 @@ export default function Home() {
                                   </li>
                                 </ul>
                                 <div className="d-flex flex-wrap align-items-center gap-3 mt-7">
-                                  <a href="#" className="text-300 border-bottom border-1 px-2 pb-2 link-hover">
+                                  <Link href="#" className="text-300 border-bottom border-1 px-2 pb-2 link-hover">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
                                       <path d="M11.0037 3.91421L2.39712 12.5208L0.98291 11.1066L9.5895 2.5H2.00373V0.5H13.0037V11.5H11.0037V3.91421Z" fill="#8F8F92" />
                                     </svg>
                                     Live Demo
-                                  </a>
-                                  <a href="#" className="text-300 border-bottom border-1 px-2 pb-2 link-hover">
+                                  </Link>
+                                  <Link href="#" className="text-300 border-bottom border-1 px-2 pb-2 link-hover">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                                       <path
                                         d="M12.001 2.5C6.47598 2.5 2.00098 6.975 2.00098 12.5C2.00098 16.925 4.86348 20.6625 8.83848 21.9875C9.33848 22.075 9.52598 21.775 9.52598 21.5125C9.52598 21.275 9.51348 20.4875 9.51348 19.65C7.00098 20.1125 6.35098 19.0375 6.15098 18.475C6.03848 18.1875 5.55098 17.3 5.12598 17.0625C4.77598 16.875 4.27598 16.4125 5.11348 16.4C5.90098 16.3875 6.46348 17.125 6.65098 17.425C7.55098 18.9375 8.98848 18.5125 9.56348 18.25C9.65098 17.6 9.91348 17.1625 10.201 16.9125C7.97598 16.6625 5.65098 15.8 5.65098 11.975C5.65098 10.8875 6.03848 9.9875 6.67598 9.2875C6.57598 9.0375 6.22598 8.0125 6.77598 6.6375C6.77598 6.6375 7.61348 6.375 9.52598 7.6625C10.326 7.4375 11.176 7.325 12.026 7.325C12.876 7.325 13.726 7.4375 14.526 7.6625C16.4385 6.3625 17.276 6.6375 17.276 6.6375C17.826 8.0125 17.476 9.0375 17.376 9.2875C18.0135 9.9875 18.401 10.875 18.401 11.975C18.401 15.8125 16.0635 16.6625 13.8385 16.9125C14.201 17.225 14.5135 17.825 14.5135 18.7625C14.5135 20.1 14.501 21.175 14.501 21.5125C14.501 21.775 14.6885 22.0875 15.1885 21.9875C19.259 20.6133 21.9999 16.7963 22.001 12.5C22.001 6.975 17.526 2.5 12.001 2.5Z"
@@ -791,7 +792,7 @@ export default function Home() {
                                       />
                                     </svg>
                                     View on Github
-                                  </a>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
@@ -843,34 +844,34 @@ export default function Home() {
                             <div className="carouselTicker carouselTicker-right position-relative z-1">
                               <ul className="carouselTicker__list m-0">
                                 <li className="carouselTicker__item mt-6">
-                                  <a href="#" className="brand-logo icon_80 icon-shape rounded-3">
+                                  <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
                                     <img src="assets/imgs/home-page-2/hero-1/icon-4.svg" alt="brand" />
-                                  </a>
+                                  </Link>
                                   <span className="tool-tip">NodeJS</span>
                                 </li>
                                 <li className="carouselTicker__item mt-6">
-                                  <a href="#" className="brand-logo icon_80 icon-shape rounded-3">
+                                  <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
                                     <img src="assets/imgs/home-page-2/hero-1/icon-1.svg" alt="brand" />
-                                  </a>
+                                  </Link>
                                   <span className="tool-tip">NextJS</span>
                                 </li>
                                 <li className="carouselTicker__item mt-6">
-                                  <a href="#" className="brand-logo icon_80 icon-shape rounded-3">
+                                  <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
                                     <img src="assets/imgs/home-page-2/hero-1/icon-2.svg" alt="brand" />
-                                  </a>
+                                  </Link>
                                   <span className="tool-tip">Firebase</span>
                                 </li>
                                 <li className="carouselTicker__item mt-6">
-                                  <a href="#" className="brand-logo icon_80 icon-shape rounded-3">
+                                  <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
                                     <img src="assets/imgs/home-page-2/hero-1/icon-3.svg" alt="brand" />
-                                  </a>
+                                  </Link>
                                   <span className="tool-tip">MongoDB</span>
                                 </li>
 
                                 <li className="carouselTicker__item mt-6">
-                                  <a href="#" className="brand-logo icon_80 icon-shape rounded-3">
+                                  <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
                                     <img src="assets/imgs/home-page-2/hero-1/icon-6.svg" alt="brand" />
-                                  </a>
+                                  </Link>
                                   <span className="tool-tip">React</span>
                                 </li>
                               </ul>
@@ -881,27 +882,27 @@ export default function Home() {
                             <div className="carouselTicker carouselTicker-left position-relative z-1">
                               <ul className="carouselTicker__list m-0 ">
                                 <li className="carouselTicker__item mt-6">
-                                  <a href="#" className="brand-logo icon_80 icon-shape rounded-3">
+                                  <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
                                     <img src="assets/imgs/home-page-2/hero-1/icon-7.svg" alt="brand" />
-                                  </a>
+                                  </Link>
                                   <span className="tool-tip">VueJS</span>
                                 </li>
                                 <li className="carouselTicker__item mt-6">
-                                  <a href="#" className="brand-logo icon_80 icon-shape rounded-3">
+                                  <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
                                     <img src="assets/imgs/home-page-2/hero-1/icon-8.svg" alt="brand" />
-                                  </a>
+                                  </Link>
                                   <span className="tool-tip">Angular</span>
                                 </li>
                                 <li className="carouselTicker__item mt-6">
-                                  <a href="#" className="brand-logo icon_80 icon-shape rounded-3">
+                                  <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
                                     <img src="assets/imgs/home-page-2/hero-1/icon-9.svg" alt="brand" />
-                                  </a>
+                                  </Link>
                                   <span className="tool-tip">Laravel</span>
                                 </li>
                                 <li className="carouselTicker__item mt-6">
-                                  <a href="#" className="brand-logo icon_80 icon-shape rounded-3">
+                                  <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
                                     <img src="assets/imgs/home-page-2/hero-1/icon-5.svg" alt="brand" />
-                                  </a>
+                                  </Link>
                                   <span className="tool-tip">Tailwind</span>
                                 </li>
                               </ul>
@@ -991,17 +992,17 @@ export default function Home() {
                   <div className="blog-card__image position-relative">
                     <div className="zoom-img rounded-2 overflow-hidden">
                       <img className="w-100" src="assets/imgs/home-page-2/blog/img-1.png" alt="zelio" />
-                      <a className="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="#">CEO</a>
-                      <a href="#" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                      <Link className="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="#">CEO</Link>
+                      <Link href="#" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
                         <i className="ri-arrow-right-up-line"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="blog-card__content position-relative text-center mt-4">
                     <span className="blog-card__date fs-7">March 28, 2023 • 3 min read</span>
                     <h6 className="blog-card__title mt-2">Optimize Your Web Application for Speed</h6>
                     <p className="blog-card__description fs-7">Stay ahead of the curve with these emerging trends in UI/UX design.</p>
-                    <a href="#" className="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                    <Link href="#" className="link-overlay position-absolute top-0 start-0 w-100 h-100"></Link>
                   </div>
                 </div>
               </div>
@@ -1010,17 +1011,17 @@ export default function Home() {
                   <div className="blog-card__image position-relative">
                     <div className="zoom-img rounded-2 overflow-hidden">
                       <img className="w-100" src="assets/imgs/home-page-2/blog/img-2.png" alt="zelio" />
-                      <a className="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="#">Development</a>
-                      <a href="#" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                      <Link className="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="#">Development</Link>
+                      <Link href="#" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
                         <i className="ri-arrow-right-up-line"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="blog-card__content position-relative text-center mt-4">
                     <span className="blog-card__date fs-7">March 28, 2023 • 3 min read</span>
                     <h6 className="blog-card__title mt-2">Best Practices for Secure Web Development</h6>
                     <p className="blog-card__description fs-7">Stay ahead of the curve with these emerging trends in UI/UX design.</p>
-                    <a href="#" className="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                    <Link href="#" className="link-overlay position-absolute top-0 start-0 w-100 h-100"></Link>
                   </div>
                 </div>
               </div>
@@ -1029,17 +1030,17 @@ export default function Home() {
                   <div className="blog-card__image position-relative">
                     <div className="zoom-img rounded-2 overflow-hidden">
                       <img className="w-100" src="assets/imgs/home-page-2/blog/img-3.png" alt="zelio" />
-                      <a className="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="#">Trending</a>
-                      <a href="#" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
+                      <Link className="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="#">Trending</Link>
+                      <Link href="#" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
                         <i className="ri-arrow-right-up-line"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="blog-card__content position-relative text-center mt-4">
                     <span className="blog-card__date fs-7">March 28, 2023 • 3 min read</span>
                     <h6 className="blog-card__title mt-2">10 JavaScript Frameworks for Web Development in 2024</h6>
                     <p className="blog-card__description fs-7">Stay ahead of the curve with these emerging trends in UI/UX design.</p>
-                    <a href="#" className="link-overlay position-absolute top-0 start-0 w-100 h-100"></a>
+                    <Link href="#" className="link-overlay position-absolute top-0 start-0 w-100 h-100"></Link>
                   </div>
                 </div>
               </div>
@@ -1095,7 +1096,7 @@ export default function Home() {
                     <span className="text-400 fs-6">Phone Number</span>
                     <h6 className="mb-0">+1-234-567-8901</h6>
                   </div>
-                  <a href="tel:+1-234-567-8901" className="position-absolute top-0 start-0 w-100 h-100"></a>
+                  <Link href="tel:+1-234-567-8901" className="position-absolute top-0 start-0 w-100 h-100"></Link>
                 </div>
                 <div className="d-flex align-items-center mb-3 position-relative d-inline-flex">
                   <div className="d-inline-block">
@@ -1107,7 +1108,7 @@ export default function Home() {
                     <span className="text-400 fs-6">Email</span>
                     <h6 className="mb-0">rajansharmaa46@gmail.com</h6>
                   </div>
-                  <a href="mailto:someone@example.com" className="position-absolute top-0 start-0 w-100 h-100"></a>
+                  <Link href="mailto:someone@example.com" className="position-absolute top-0 start-0 w-100 h-100"></Link>
                 </div>
                 <div className="d-flex align-items-center mb-3 position-relative d-inline-flex">
                   <div className="d-inline-block">
@@ -1119,7 +1120,7 @@ export default function Home() {
                     <span className="text-400 fs-6">Skype</span>
                     <h6 className="mb-0">rajansharmax</h6>
                   </div>
-                  <a href="skype:SKYPENAME?add" className="position-absolute top-0 start-0 w-100 h-100"></a>
+                  <Link href="skype:SKYPENAME?add" className="position-absolute top-0 start-0 w-100 h-100"></Link>
                 </div>
                 <div className="d-flex align-items-center mb-3 position-relative d-inline-flex">
                   <div className="d-inline-block">
@@ -1131,7 +1132,7 @@ export default function Home() {
                     <span className="text-400 fs-6">Address</span>
                     <h6 className="mb-0">127.0.0.1 - Chandigarh</h6>
                   </div>
-                  <a href="https://maps.google.com/maps?q=1st+avenue,New+York" className="position-absolute top-0 start-0 w-100 h-100"></a>
+                  <Link href="https://maps.google.com/maps?q=1st+avenue,New+York" className="position-absolute top-0 start-0 w-100 h-100"></Link>
                 </div>
               </div>
             </div>
@@ -1145,31 +1146,31 @@ export default function Home() {
         <div className="section-footer-2 position-relative">
           <div className="container position-relative z-1 border-top border-1 pb-2 pt-4">
             <div className="text-center">
-              <a className="d-flex main-logo align-items-center justify-content-center mb-3" href="">
+              <Link className="d-flex main-logo align-items-center justify-content-center mb-3" href="">
                 <img src="assets/imgs/home-page-2/template/favicon.svg" alt="zelio" />
                 <span className="fs-4 ms-2">rajansharmax</span>
-              </a>
+              </Link>
               <div className="d-flex justify-content-center gap-3">
-                <a href="http://facebook.com">
+                <Link href="http://facebook.com">
                   <i className="ri-facebook-circle-fill fs-18"></i>
-                </a>
-                <a href="http://twitter.com">
+                </Link>
+                <Link href="http://twitter.com">
                   <i className="ri-twitter-x-fill fs-18"></i>
-                </a>
-                <a href="http://linkedin.com">
+                </Link>
+                <Link href="http://linkedin.com">
                   <i className="ri-linkedin-fill fs-18"></i>
-                </a>
-                <a href="http://github.com">
+                </Link>
+                <Link href="http://github.com">
                   <i className="ri-github-fill fs-18"></i>
-                </a>
+                </Link>
               </div>
               <div className="navigation d-flex align-items-center justify-content-center flex-wrap gap-4 my-4">
-                <a href="#about" className="fs-6"> About me </a>
-                <a href="#resume" className="fs-6"> Resume </a>
-                <a href="#services" className="fs-6"> Services </a>
-                <a href="#portfolio" className="fs-6"> Portfolio </a>
-                <a href="#blog" className="fs-6"> Blog </a>
-                <a href="#contact" className="fs-6"> Contact </a>
+                <Link href="#about" className="fs-6"> About me </Link>
+                <Link href="#resume" className="fs-6"> Resume </Link>
+                <Link href="#services" className="fs-6"> Services </Link>
+                <Link href="#portfolio" className="fs-6"> Portfolio </Link>
+                <Link href="#blog" className="fs-6"> Blog </Link>
+                <Link href="#contact" className="fs-6"> Contact </Link>
               </div>
             </div>
           </div>
