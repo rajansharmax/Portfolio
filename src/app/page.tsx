@@ -1,5 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import CarouselTicker from "./components/CarouselTicker";
 
 export default function Home() {
   return (
@@ -34,36 +35,7 @@ export default function Home() {
                       <p className="mb-6 text-secondary-2">&lt;p&gt;<span className="text-dark">With expertise in cutting-edge technologies such as</span> <span className="text-secondary-2">NodeJS</span>, <span className="text-secondary-2">React</span>, <span className="text-secondary-2">Angular</span>, and <span className="text-secondary-2">Laravel</span><span className="text-dark">... I deliver web solutions that are both innovative and robust.</span>&lt;/p&gt;</p>
                       <div className="row">
                         <div className="col-7">
-
-                          <div className="carouselTicker carouselTicker-left position-relative z-1 mt-lg-0 mt-8">
-                            <ul className="carouselTicker__list ">
-                              <li className="carouselTicker__item">
-                                <Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
-                                  <Image src="assets/imgs/home-page-2/hero-1/icon-1.svg" alt="brand" width={30} height={30} />
-                                </Link>
-                              </li>
-                              <li className="carouselTicker__item">
-                                <Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
-                                  <Image src="assets/imgs/home-page-2/hero-1/icon-2.svg" alt="brand" width={30} height={30} />
-                                </Link>
-                              </li>
-                              <li className="carouselTicker__item">
-                                <Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
-                                  <Image src="assets/imgs/home-page-2/hero-1/icon-3.svg" alt="brand" width={20} height={20} />
-                                </Link>
-                              </li>
-                              <li className="carouselTicker__item">
-                                <Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
-                                  <Image src="assets/imgs/home-page-2/hero-1/icon-4.svg" alt="brand" width={30} height={30} />
-                                </Link>
-                              </li>
-                              <li className="carouselTicker__item">
-                                <Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
-                                  <Image src="assets/imgs/home-page-2/hero-1/icon-5.svg" alt="brand" width={30} height={30} />
-                                </Link>
-                              </li>
-                            </ul>
-                          </div>
+                          <CarouselTicker />
                         </div>
                         <div className="col-5 d-flex align-items-end">
                           <span className="fs-6 text-300 mb-2">...and more</span>
@@ -80,8 +52,8 @@ export default function Home() {
             </div>
           </div>
           <div className="background position-absolute top-0 start-0 w-100 h-100">
-            <img className="bg-w" src="assets/imgs/home-page-2/hero-1/bg.png" alt="zelio" />
-            <img className="bg-d" src="assets/imgs/home-page-2/hero-1/bg-dark.png" alt="zelio" />
+            <img className="bg-w" src={"/assets/imgs/home-page-2/hero-1/bg.png"} alt="zelio" />
+            <img className="bg-d" src={"/assets/imgs/home-page-2/hero-1/bg-dark.png"} alt="zelio" />
           </div>
         </section>
 
@@ -141,7 +113,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="background position-absolute top-0 start-0 w-100 h-100 filter-invert" data-background="assets/imgs/home-page-2/static/bg.png"></div>
+              <div className="background position-absolute top-0 start-0 w-100 h-100 filter-invert" data-background="/assets/imgs/home-page-2/static/bg.png"></div>
             </div>
           </div>
         </div>
@@ -294,7 +266,7 @@ export default function Home() {
                           <div className="circle-1 position-relative z-0">
                             <div className="circle-2 position-absolute top-50 start-50 translate-middle z-1">
                               <div className="position-absolute top-50 start-50 translate-middle z-2">
-                                <img className="w-100 h-100 rounded-circle" src="assets/imgs/coporation/avatar.png" alt="zelio" />
+                                <img className="w-100 h-100 rounded-circle" src="/assets/imgs/coporation/avatar.png" alt="zelio" />
                                 <svg className="text-primary-2 position-absolute bottom-0 end-0" xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 5 6" fill="none">
                                   <circle cx="2.5" cy="3" r="2.5" fill="#A8FF53" />
                                 </svg>
@@ -478,7 +450,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <img className="position-absolute top-0 start-0 z-0" src="assets/imgs/home-page-2/services/bg.png" alt="zelio" />
+                <img className="position-absolute top-0 start-0 z-0" src="/assets/imgs/home-page-2/services/bg.png" alt="zelio" />
               </div>
             </div>
           </div>
@@ -510,7 +482,7 @@ export default function Home() {
                       <div className="d-flex flex-column gap-2">
                         <Link href="#" className="technology border border-1 rounded-3 p-3">
                           <div className="d-flex align-items-center gap-2">
-                            <img src="assets/imgs/home-page-2/experience/google.svg" alt="zelio" />
+                            <img src="/assets/imgs/home-page-2/experience/google.svg" alt="zelio" />
                             <div className="d-flex flex-column ms-2">
                               <h5 className="mb-1">Google</h5>
                               <span className="text-300">2018 - Present</span>
@@ -519,7 +491,7 @@ export default function Home() {
                         </Link>
                         <Link href="#" className="technology border border-1 rounded-3 p-3">
                           <div className="d-flex align-items-center gap-2">
-                            <img src="assets/imgs/home-page-2/experience/twitter.svg" alt="zelio" />
+                            <img src="/assets/imgs/home-page-2/experience/twitter.svg" alt="zelio" />
                             <div className="d-flex flex-column ms-2">
                               <h5 className="mb-1">Twitter (X)</h5>
                               <span className="text-300">2012 - 2015</span>
@@ -528,7 +500,7 @@ export default function Home() {
                         </Link>
                         <Link href="#" className="technology border border-1 rounded-3 p-3">
                           <div className="d-flex align-items-center gap-2">
-                            <img src="assets/imgs/home-page-2/experience/amazon.svg" alt="zelio" />
+                            <img src="/assets/imgs/home-page-2/experience/amazon.svg" alt="zelio" />
                             <div className="d-flex flex-column ms-2">
                               <h5 className="mb-1">Amazon</h5>
                               <span className="text-300">2018 - Present</span>
@@ -537,7 +509,7 @@ export default function Home() {
                         </Link>
                         <Link href="#" className="technology border border-1 rounded-3 p-3">
                           <div className="d-flex align-items-center gap-2">
-                            <img src="assets/imgs/home-page-2/experience/payPal.svg" alt="zelio" />
+                            <img src="/assets/imgs/home-page-2/experience/payPal.svg" alt="zelio" />
                             <div className="d-flex flex-column ms-2">
                               <h5 className="mb-1">PayPal</h5>
                               <span className="text-300">2010 - 2012</span>
@@ -563,7 +535,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <img className="position-absolute top-0 start-0 z-0" src="assets/imgs/home-page-2/services/bg.png" alt="zelio" />
+                <img className="position-absolute top-0 start-0 z-0" src="/assets/imgs/home-page-2/services/bg.png" alt="zelio" />
               </div>
             </div>
           </div>
@@ -694,7 +666,7 @@ export default function Home() {
                           <div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3">
                             <div className="row">
                               <div className="col-lg-5">
-                                <img className="w-100" src="assets/imgs/home-page-2/projects/img-1.png" alt="zelio" />
+                                <img className="w-100" src="/assets/imgs/home-page-2/projects/img-1.png" alt="zelio" />
                               </div>
                               <div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
                                 <h4 className="text-linear-4">
@@ -748,7 +720,7 @@ export default function Home() {
                           <div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3">
                             <div className="row">
                               <div className="col-lg-5">
-                                <img className="w-100" src="assets/imgs/home-page-2/projects/img-1.png" alt="zelio" />
+                                <img className="w-100" src="/assets/imgs/home-page-2/projects/img-1.png" alt="zelio" />
                               </div>
                               <div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
                                 <h4 className="text-linear-4">
@@ -814,7 +786,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <img className="position-absolute top-0 start-0 z-0" src="assets/imgs/home-page-2/projects/bg.png" alt="zelio" />
+                <img className="position-absolute top-0 start-0 z-0" src="/assets/imgs/home-page-2/projects/bg.png" alt="zelio" />
               </div>
             </div>
           </div>
@@ -845,32 +817,32 @@ export default function Home() {
                               <ul className="carouselTicker__list m-0">
                                 <li className="carouselTicker__item mt-6">
                                   <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
-                                    <img src="assets/imgs/home-page-2/hero-1/icon-4.svg" alt="brand" />
+                                    <img src="/assets/imgs/home-page-2/hero-1/icon-4.svg" alt="brand" />
                                   </Link>
                                   <span className="tool-tip">NodeJS</span>
                                 </li>
                                 <li className="carouselTicker__item mt-6">
                                   <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
-                                    <img src="assets/imgs/home-page-2/hero-1/icon-1.svg" alt="brand" />
+                                    <img src="/assets/imgs/home-page-2/hero-1/icon-1.svg" alt="brand" />
                                   </Link>
                                   <span className="tool-tip">NextJS</span>
                                 </li>
                                 <li className="carouselTicker__item mt-6">
                                   <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
-                                    <img src="assets/imgs/home-page-2/hero-1/icon-2.svg" alt="brand" />
+                                    <img src="/assets/imgs/home-page-2/hero-1/icon-2.svg" alt="brand" />
                                   </Link>
                                   <span className="tool-tip">Firebase</span>
                                 </li>
                                 <li className="carouselTicker__item mt-6">
                                   <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
-                                    <img src="assets/imgs/home-page-2/hero-1/icon-3.svg" alt="brand" />
+                                    <img src="/assets/imgs/home-page-2/hero-1/icon-3.svg" alt="brand" />
                                   </Link>
                                   <span className="tool-tip">MongoDB</span>
                                 </li>
 
                                 <li className="carouselTicker__item mt-6">
                                   <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
-                                    <img src="assets/imgs/home-page-2/hero-1/icon-6.svg" alt="brand" />
+                                    <img src="/assets/imgs/home-page-2/hero-1/icon-6.svg" alt="brand" />
                                   </Link>
                                   <span className="tool-tip">React</span>
                                 </li>
@@ -883,25 +855,25 @@ export default function Home() {
                               <ul className="carouselTicker__list m-0 ">
                                 <li className="carouselTicker__item mt-6">
                                   <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
-                                    <img src="assets/imgs/home-page-2/hero-1/icon-7.svg" alt="brand" />
+                                    <img src="/assets/imgs/home-page-2/hero-1/icon-7.svg" alt="brand" />
                                   </Link>
                                   <span className="tool-tip">VueJS</span>
                                 </li>
                                 <li className="carouselTicker__item mt-6">
                                   <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
-                                    <img src="assets/imgs/home-page-2/hero-1/icon-8.svg" alt="brand" />
+                                    <img src="/assets/imgs/home-page-2/hero-1/icon-8.svg" alt="brand" />
                                   </Link>
                                   <span className="tool-tip">Angular</span>
                                 </li>
                                 <li className="carouselTicker__item mt-6">
                                   <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
-                                    <img src="assets/imgs/home-page-2/hero-1/icon-9.svg" alt="brand" />
+                                    <img src="/assets/imgs/home-page-2/hero-1/icon-9.svg" alt="brand" />
                                   </Link>
                                   <span className="tool-tip">Laravel</span>
                                 </li>
                                 <li className="carouselTicker__item mt-6">
                                   <Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
-                                    <img src="assets/imgs/home-page-2/hero-1/icon-5.svg" alt="brand" />
+                                    <img src="/assets/imgs/home-page-2/hero-1/icon-5.svg" alt="brand" />
                                   </Link>
                                   <span className="tool-tip">Tailwind</span>
                                 </li>
@@ -991,7 +963,7 @@ export default function Home() {
                 <div className="blog-card rounded-top-2 mb-lg-3 mb-md-5 mb-3">
                   <div className="blog-card__image position-relative">
                     <div className="zoom-img rounded-2 overflow-hidden">
-                      <img className="w-100" src="assets/imgs/home-page-2/blog/img-1.png" alt="zelio" />
+                      <img className="w-100" src="/assets/imgs/home-page-2/blog/img-1.png" alt="zelio" />
                       <Link className="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="#">CEO</Link>
                       <Link href="#" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
                         <i className="ri-arrow-right-up-line"></i>
@@ -1010,7 +982,7 @@ export default function Home() {
                 <div className="blog-card rounded-top-2 mb-lg-3 mb-md-5 mb-3">
                   <div className="blog-card__image position-relative">
                     <div className="zoom-img rounded-2 overflow-hidden">
-                      <img className="w-100" src="assets/imgs/home-page-2/blog/img-2.png" alt="zelio" />
+                      <img className="w-100" src="/assets/imgs/home-page-2/blog/img-2.png" alt="zelio" />
                       <Link className="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="#">Development</Link>
                       <Link href="#" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
                         <i className="ri-arrow-right-up-line"></i>
@@ -1029,7 +1001,7 @@ export default function Home() {
                 <div className="blog-card rounded-top-2 mb-lg-3 mb-md-5 mb-3">
                   <div className="blog-card__image position-relative">
                     <div className="zoom-img rounded-2 overflow-hidden">
-                      <img className="w-100" src="assets/imgs/home-page-2/blog/img-3.png" alt="zelio" />
+                      <img className="w-100" src="/assets/imgs/home-page-2/blog/img-3.png" alt="zelio" />
                       <Link className="position-absolute bottom-0 start-0 m-3 text-white-keep border border-white fw-medium px-3 py-1 fs-7 bg-white rounded-2" href="#">Trending</Link>
                       <Link href="#" className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle">
                         <i className="ri-arrow-right-up-line"></i>
@@ -1147,7 +1119,7 @@ export default function Home() {
           <div className="container position-relative z-1 border-top border-1 pb-2 pt-4">
             <div className="text-center">
               <Link className="d-flex main-logo align-items-center justify-content-center mb-3" href="">
-                <img src="assets/imgs/home-page-2/template/favicon.svg" alt="zelio" />
+                <img src="/assets/imgs/home-page-2/template/favicon.svg" alt="zelio" />
                 <span className="fs-4 ms-2">rajansharmax</span>
               </Link>
               <div className="d-flex justify-content-center gap-3">

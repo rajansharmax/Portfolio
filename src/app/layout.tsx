@@ -5,6 +5,7 @@ import BaseLayout from "@/app/components/Layout";
 import Head from "@/app/components/Layout/Partials/Head";
 import NextTopLoader from "nextjs-toploader";
 import Tags from "./components/Layout/Partials/Foot/Tags";
+import BootstrapClient from "./components/BootstrapClient/BootstrapClient";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -46,6 +47,7 @@ export default function RootLayout({
         />
         <BaseLayout>{children}</BaseLayout>
         <Tags />
+        <BootstrapClient />
       </body>
     </html>
   );
