@@ -9,9 +9,6 @@ const Tags = () => {
         <Script src={"/assets/js/vendors/smart-stick-nav.js"}></Script>
         <Script src={"/assets/js/vendors/jquery.magnific-popup.min.js"}></Script>
         <Script src={"/assets/js/vendors/gsap.min.js"}></Script>
-        <Script src={"/assets/js/vendors/imagesloaded.pkgd.min.js"}></Script>
-        <Script src={"/assets/js/vendors/ScrollTrigger.min.js"}></Script>
-        <Script src={"/assets/js/vendors/jquery.carouselTicker.min.js"}></Script>
         <Script src={"/assets/js/vendors/wow.min.js"}></Script>
         <Script src={"/assets/js/vendors/jquery.odometer.min.js"}></Script>
         <Script src={"/assets/js/vendors/jquery.appear.js"}></Script>
