@@ -4,9 +4,41 @@ import "swiper/css";
 import Image from "next/image";
 import Link from "next/link";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import Swiper from "swiper";
 
+interface Item {
+    id: number;
+    img: string;
+    href?: string;
+    height?: number;
+    width?: number;
+}
+
+
+
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Skills component.
+ *
+ * This component displays a carousel of logos representing the skills I have.
+ *
+ * The component uses the Swiper library to create a carousel with two rows of logos.
+ * The logos are sourced from the SliderItems and SliderItems2 arrays.
+ *
+ * The component also includes a section of text that lists the skills I have.
+ *
+ * The component is responsive and will adapt to different screen sizes.
+ *
+ * The component is also decorated with some SVG shapes to give it a more interesting design.
+ *
+ * @return {JSX.Element} The JSX element representing the Skills component.
+ */
+/******  12061bb1-bbca-4b43-8a2f-7af20e9074b3  *******/
 const Skills = () => {
-    const SliderItems = [
+    const onSwiperChange = (Swiper: Swiper) => {
+        Swiper.autoplay.start();
+    }
+    const SliderItems: Item[] = [
         {
             id: 1,
             img: "/assets/imgs/home-page-2/hero-1/icon-4.svg",
@@ -41,7 +73,7 @@ const Skills = () => {
         },
     ];
 
-    const SliderItems2 = [
+    const SliderItems2: Item[] = [
         {
             id: 1,
             img: "/assets/imgs/home-page-2/hero-1/icon-7.svg",
@@ -130,7 +162,7 @@ const Skills = () => {
                                                                 speed={5000}
                                                                 modules={[Autoplay, Pagination, Navigation]}
                                                                 onSlideChange={() => { }}
-                                                                onSwiper={(swiper: any) => { }}
+                                                                onSwiper={(swiper: Swiper) => onSwiperChange(swiper)}
                                                             >
                                                                 {SliderItems.map((item, index) => (
                                                                     <SwiperSlide key={index}>
@@ -190,7 +222,7 @@ const Skills = () => {
                                                                 speed={5000}
                                                                 modules={[Autoplay, Pagination, Navigation]}
                                                                 onSlideChange={() => { }}
-                                                                onSwiper={(swiper: any) => { }}
+                                                                onSwiper={(swiper: Swiper) => onSwiperChange(swiper)}
                                                             >
                                                                 {SliderItems2.map((item, index) => (
                                                                     <SwiperSlide key={index}>

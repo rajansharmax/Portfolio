@@ -2,8 +2,13 @@
 import { Swiper as SwiperSlider, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-
+import Swiper from "swiper";
 const Cooperation = () => {
+
+    const onSwiperChange = (Swiper: Swiper) => {
+        Swiper.autoplay.start();
+    }
+
     return (
         <>
             <div className="carouselTicker carouselTicker-left position-relative z-1 mb-2">
@@ -43,9 +48,7 @@ const Cooperation = () => {
                         onSlideChange={() => {
                             
                         }}
-                        onSwiper={(swiper: any) => {
-                            
-                        }}
+                        onSwiper={(swiper: Swiper) => onSwiperChange(swiper)}
                     >
                         <SwiperSlide>
                             <li className="">
@@ -249,9 +252,7 @@ const Cooperation = () => {
                         onSlideChange={() => {
                             
                         }}
-                        onSwiper={(swiper) => {
-                            
-                        }}
+                        onSwiper={(swiper: Swiper) => onSwiperChange(swiper)}
                     >
                         <SwiperSlide>
                             <li className="">
