@@ -115,7 +115,20 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="background position-absolute top-0 start-0 w-100 h-100 filter-invert" data-background="/assets/imgs/home-page-2/static/bg.png"></div>
+              {/* <div className="background position-absolute top-0 start-0 w-100 h-100 filter-invert" data-background={"/assets/imgs/home-page-2/static/bg.png"}></div> */}
+              <div
+                className="background position-absolute top-0 start-0 w-100 h-100 filter-invert"
+                data-background="/assets/imgs/home-page-2/static/bg.png"
+              >
+                <Image
+                  src="/assets/imgs/home-page-2/static/bg.png"
+                  alt="Background"
+                  layout="fill"
+                  objectFit="cover"
+                  quality={100}
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
