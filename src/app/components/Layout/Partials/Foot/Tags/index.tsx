@@ -20,6 +20,7 @@ const Tags = () => {
         <Script src={"/assets/js/vendors/gsap-custom.js"}></Script>
         <Script src={"/assets/js/imageRevealHover.js"}></Script>
         <Script src={"/assets/js/vendors/aat.min.js"}></Script>
+        <Script src={"/assets/js/vendors/color-modes.js"}></Script>
         <Script src={"/assets/js/main.js"}></Script>
       </>
     );

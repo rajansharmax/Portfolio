@@ -12,48 +12,48 @@ const Header = () => {
                                 <i className="ri-menu-2-line"></i>
                             </Link>
                             <div className="container py-3 px-4">
-                                <a className="navbar-brand d-flex main-logo align-items-center" href="index-2.html">
-                                    <Image src="assets/imgs/home-page-2/template/favicon.svg" alt="zelio" width={40} height={40} />
+                                <Link className="navbar-brand d-flex main-logo align-items-center" href="/">
+                                    <Image src="/assets/imgs/home-page-2/template/favicon.svg" alt="zelio" width={40} height={40} />
                                     <span className="fs-4 ms-2">rajansharmax</span>
-                                </a>
+                                </Link>
                                 <div className="d-none d-lg-flex"><div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li className="nav-item">
-                                            <a className="nav-link active" href="#about">About me</a>
+                                            <Link className="nav-link active" href="#about">About me</Link>
                                         </li>
 
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#resume">Resume</a>
+                                            <Link className="nav-link" href="#resume">Resume</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#services">Services</a>
-                                        </li>
-
-                                        <li className="nav-item">
-                                            <a className="nav-link" href="#portfolio">Portfolio</a>
+                                            <Link className="nav-link" href="#services">Services</Link>
                                         </li>
 
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#blog">Blog</a>
+                                            <Link className="nav-link" href="#portfolio">Portfolio</Link>
+                                        </li>
+
+                                        <li className="nav-item">
+                                            <Link className="nav-link" href="#blog">Blog</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#contact">Contact</a>
+                                            <Link className="nav-link" href="#contact">Contact</Link>
                                         </li>
                                     </ul>
                                 </div>
                                 </div>
                                 <div className="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
                                     <div className="d-md-flex d-none gap-3">
-                                        <Link href="http://facebook.com">
+                                        <Link href="http://facebook.com/rajansharmax" target="_blank">
                                             <i className="ri-facebook-circle-fill fs-18"></i>
                                         </Link>
-                                        <Link href="http://twitter.com">
+                                        <Link href="http://twitter.com/rajansharmax" target="_blank">
                                             <i className="ri-twitter-x-fill fs-18"></i>
                                         </Link>
-                                        <Link href="http://linkedin.com">
+                                        <Link href="http://linkedin.com/rajansharmax" target="_blank">
                                             <i className="ri-linkedin-fill fs-18"></i>
                                         </Link>
-                                        <Link href="http://github.com">
+                                        <Link href="http://github.com/rajansharmax" target="_blank">
                                             <i className="ri-github-fill fs-18"></i>
                                         </Link>
                                     </div>
@@ -120,10 +120,10 @@ const Header = () => {
                     <div className="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
                         <div className="mobile-header-wrapper-inner">
                             <div className="mobile-header-logo">
-                                <a className="d-flex main-logo align-items-center d-inline-flex" href="index.html">
+                                <Link className="d-flex main-logo align-items-center d-inline-flex" href="index.html">
                                     <Image src={"/assets/imgs/footer-1/logo.svg"} alt="zelio" width={40} height={40} />
                                     <span className="fs-4 ms-2 text-dark">rajansharmax</span>
-                                </a>
+                                </Link>
                                 <div className="burger-icon burger-icon-white border rounded-3">
                                     <span className="burger-icon-top"></span>
                                     <span className="burger-icon-mid"></span>
@@ -136,7 +136,7 @@ const Header = () => {
                                         <nav>
                                             <ul className="mobile-menu font-heading ps-0">
                                                 <li className="nav-item has-children">
-                                                    <a className="nav-link active" href="#">Home</a>
+                                                    <Link className="nav-link active" href="#">Home</Link>
                                                     <ul className="sub-menu">
                                                         <li><Link href="index.html">Landing page</Link></li>
                                                         <li><Link href="index-1.html">Home 1 - Designer</Link></li>
@@ -146,21 +146,21 @@ const Header = () => {
                                                 </li>
 
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="services.html">Services</a>
+                                                    <Link className="nav-link" href="services.html">Services</Link>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="work.html">Portfolio</a>
-                                                </li>
-
-                                                <li className="nav-item">
-                                                    <a className="nav-link" href="pricing.html">Pricing</a>
+                                                    <Link className="nav-link" href="work.html">Portfolio</Link>
                                                 </li>
 
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="blog-list.html">Blog</a>
+                                                    <Link className="nav-link" href="pricing.html">Pricing</Link>
+                                                </li>
+
+                                                <li className="nav-item">
+                                                    <Link className="nav-link" href="blog-list.html">Blog</Link>
                                                 </li>
                                                 <li className="nav-item">
-                                                    <a className="nav-link" href="#contact">Contact</a>
+                                                    <Link className="nav-link" href="#contact">Contact</Link>
                                                 </li>
                                             </ul>
                                         </nav>

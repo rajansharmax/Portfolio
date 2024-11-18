@@ -277,15 +277,15 @@ export default function Home() {
                         <div className="d-flex flex-column gap-2">
                           <Link href="#">
                             <i className="ri-skype-fill"></i>
-                            <span className="text-300">[skype] <span className="text-secondary-2">rajansharmax</span></span>
+                            <span className="text-300"> <span className="text-secondary-2">rajansharmax</span></span>
                           </Link>
                           <Link href="#">
                             <i className="ri-phone-fill"></i>
-                            <span className="text-300">[phone] <span className="text-secondary-2">+1-234-567-8901</span></span>
+                            <span className="text-300"> <span className="text-secondary-2">+1-234-567-8901</span></span>
                           </Link>
                           <Link href="#">
                             <i className="ri-mail-fill"></i>
-                            <span className="text-300">[email] <span className="text-secondary-2">contact@rajansharmax</span></span>
+                            <span className="text-300"> <span className="text-secondary-2">contact@rajansharmax</span></span>
                           </Link>
                         </div>
                       </div>
