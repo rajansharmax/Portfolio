@@ -4,6 +4,7 @@ import "swiper/css";
 import Image from "next/image";
 import Link from "next/link";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import {Swiper as SwiperClass} from "swiper";
 
 interface Item {
     id: number;
@@ -14,6 +15,10 @@ interface Item {
 }
 
 const Swiper = ({items}: {items: Item[]}) => {
+
+    const onSwiperChange = (Swiper: SwiperClass) => {
+        Swiper.autoplay.start();
+    };
     return (
         <>
             <SwiperSlider
@@ -51,9 +56,7 @@ const Swiper = ({items}: {items: Item[]}) => {
                 onSlideChange={() => {
                     
                 }}
-                onSwiper={(swiper: any) => {
-
-                }}
+                onSwiper={(swiper: SwiperClass) => onSwiperChange(swiper)}
             >
 			{items.map((item, index) => (
 				<SwiperSlide key={index}>
