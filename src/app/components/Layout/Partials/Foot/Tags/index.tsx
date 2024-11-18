@@ -5,7 +5,6 @@ const Tags = () => {
       <>
         <Script src={"/assets/js/vendors/jquery-3.7.1.min.js"}></Script>
         <Script src={"/assets/js/vendors/bootstrap.bundle.min.js"}></Script>
-        <Script src={"/assets/js/vendors/swiper-bundle.min.js"}></Script>
         <Script src={"/assets/js/vendors/aos.js"}></Script>
         <Script src={"/assets/js/vendors/smart-stick-nav.js"}></Script>
         <Script src={"/assets/js/vendors/jquery.magnific-popup.min.js"}></Script>
