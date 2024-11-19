@@ -6,6 +6,9 @@ import Head from "@/app/components/Layout/Partials/Head";
 import NextTopLoader from "nextjs-toploader";
 import Tags from "./components/Layout/Partials/Foot/Tags";
 import BootstrapClient from "./components/BootstrapClient/BootstrapClient";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@/assets/css/main.css";
+import "@/assets/fonts/remixicon/remixicon.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

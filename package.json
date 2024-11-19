@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "gsap": "^3.12.5",

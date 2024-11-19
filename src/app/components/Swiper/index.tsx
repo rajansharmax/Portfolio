@@ -26,9 +26,10 @@ const Swiper = ({items}: {items: Item[]}) => {
                 slidesPerView={5}
                 loop={true}
                 loopAddBlankSlides={true}
-                loopAdditionalSlides={2}
+                cardsEffect={{
+                    slideShadows: true
+                }}
                 rewind={true}
-                navigation={false}
                 breakpoints={{
                     1200: {
                         slidesPerView: 5,

@@ -1,14 +1,31 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 
 const Header = () => {
+
+    const toggleMenu = () => {
+        const offCanvas = document.getElementById("offCanvas__info");
+        offCanvas?.classList.toggle("offcanvas-end");
+        offCanvas?.classList.toggle("active");
+    }
+
+    // const closeOffcanvas = (e: MouseEvent|KeyboardEvent|FocusEvent|TouchEvent) => {
+    //     const offCanvas = document.getElementById("offCanvas__info");
+    //     if (offCanvas?.classList.contains("active") && e.target !== offCanvas) {
+    //         // offCanvas.classList.remove("active");
+    //     }
+    // }
+
+    // document.addEventListener("click", closeOffcanvas);
+
     return (
         <>
             <header>
                 <div className="container position-relative">
                     <div className="position-relative">
                         <nav className="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
-                            <Link href="#" className="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target="offCanvas__info" aria-controls="offCanvas__info">
+                            <Link href="#" className="navbar-menu p-4 text-center square-100 menu-tigger icon_80 icon-shape d-none d-md-flex" data-bs-target="offCanvas__info" aria-controls="offCanvas__info" onClick={toggleMenu}>
                                 <i className="ri-menu-2-line"></i>
                             </Link>
                             <div className="container py-3 px-4">
@@ -57,7 +74,7 @@ const Header = () => {
                                             <i className="ri-github-fill fs-18"></i>
                                         </Link>
                                     </div>
-                                    <div className="burger-icon burger-icon-white border rounded-3">
+                                    <div className="burger-icon burger-icon-white border rounded-3" onClick={toggleMenu}>
                                         <span className="burger-icon-top"></span>
                                         <span className="burger-icon-mid"></span>
                                         <span className="burger-icon-bottom"></span>
@@ -73,7 +90,7 @@ const Header = () => {
                     {/* <!-- offCanvas-menu --> */}
                     <div className="offCanvas__info style-2" id="offCanvas__info">
                         <div className="offCanvas__close-icon menu-close">
-                            <button type="button" className="close-icon" data-bs-dismiss="offcanvas" aria-label="Close"><i className="ri-close-line"></i></button>
+                            <button type="button" className="close-icon" data-bs-dismiss="offcanvas" aria-label="Close" onClick={toggleMenu}><i className="ri-close-line"></i></button>
                         </div>
                         <div className="offCanvas__logo mb-5"><h3 className="mb-0">Get in touch</h3></div>
                         <div className="offCanvas__side-info mb-30">

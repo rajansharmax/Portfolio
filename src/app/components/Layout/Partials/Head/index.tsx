@@ -35,47 +35,6 @@ const Head = () => {
       <meta property="og:title" content="Link preview title"></meta>
       <meta property="og:description" content="Link preview description" />
       <meta property="og:url" content="Canonical link preview URL"></meta>
-      <link
-        type="text/css"
-        href={"/assets/css/vendors/bootstrap.min.css"}
-        rel="stylesheet"
-      />
-      <link
-        type="text/css"
-        href={"/assets/css/vendors/swiper-bundle.min.css"}
-        rel="stylesheet"
-      />
-      <link
-        type="text/css"
-        href={"/assets/css/vendors/aos.css"}
-        rel="stylesheet"
-      />
-      <link
-        type="text/css"
-        href={"/assets/css/vendors/odometer.css"}
-        rel="stylesheet"
-      />
-      <link
-        type="text/css"
-        href={"/assets/css/vendors/carouselTicker.css"}
-        rel="stylesheet"
-      />
-      <link
-        type="text/css"
-        href={"/assets/css/vendors/magnific-popup.css"}
-        rel="stylesheet"
-      />
-      <link
-        type="text/css"
-        href={"/assets/fonts/remixicon/remixicon.css"}
-        rel="stylesheet"
-      />
-      <link
-        type="text/css"
-        href={"/assets/fonts/satoshi/satoshi.css"}
-        rel="stylesheet"
-      />
-      <link type="text/css" href={"/assets/css/main.css"} rel="stylesheet" />
       <Tags />
     </head>
   );

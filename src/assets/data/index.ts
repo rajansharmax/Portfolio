@@ -31,4 +31,36 @@ export const SliderItems = [
         img: "/assets/imgs/home-page-2/hero-1/icon-1.svg",
         href: "#",
     },
+        {
+        id: 7,
+        img: "/assets/imgs/home-page-2/hero-1/icon-1.svg",
+        href: "#",
+    },
+    {
+        id: 8,
+        img: "/assets/imgs/home-page-2/hero-1/icon-2.svg",
+        href: "#",
+    },
+    {
+        id: 9,
+        img: "/assets/imgs/home-page-2/hero-1/icon-3.svg",
+        href: "#",
+        width: 25,
+        height: 25
+    },
+    {
+        id: 10,
+        img: "/assets/imgs/home-page-2/hero-1/icon-4.svg",
+        href: "#",
+    },
+    {
+        id: 11,
+        img: "/assets/imgs/home-page-2/hero-1/icon-5.svg",
+        href: "#",
+    },
+    {
+        id: 12,
+        img: "/assets/imgs/home-page-2/hero-1/icon-1.svg",
+        href: "#",
+    },
 ];

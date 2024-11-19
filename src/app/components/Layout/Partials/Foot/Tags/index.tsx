@@ -1,9 +1,9 @@
-import Script from "next/script";
+// import Script from "next/script";
 
 const Tags = () => {
     return (
       <>
-        <Script src={"/assets/js/vendors/jquery-3.7.1.min.js"}></Script>
+        {/* <Script src={"/assets/js/vendors/jquery-3.7.1.min.js"}></Script>
         <Script src={"/assets/js/vendors/aos.js"}></Script>
         <Script src={"/assets/js/vendors/smart-stick-nav.js"}></Script>
         <Script src={"/assets/js/vendors/jquery.magnific-popup.min.js"}></Script>
@@ -12,7 +12,7 @@ const Tags = () => {
         <Script src={"/assets/js/imageRevealHover.js"}></Script>
         <Script src={"/assets/js/vendors/aat.min.js"}></Script>
         <Script src={"/assets/js/vendors/color-modes.js"}></Script>
-        <Script src={"/assets/js/main.js"}></Script>
+        <Script src={"/assets/js/main.js"}></Script> */}
       </>
     );
 }

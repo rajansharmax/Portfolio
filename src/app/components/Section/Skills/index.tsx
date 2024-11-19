@@ -14,26 +14,6 @@ interface Item {
     width?: number;
 }
 
-
-
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * Skills component.
- *
- * This component displays a carousel of logos representing the skills I have.
- *
- * The component uses the Swiper library to create a carousel with two rows of logos.
- * The logos are sourced from the SliderItems and SliderItems2 arrays.
- *
- * The component also includes a section of text that lists the skills I have.
- *
- * The component is responsive and will adapt to different screen sizes.
- *
- * The component is also decorated with some SVG shapes to give it a more interesting design.
- *
- * @return {JSX.Element} The JSX element representing the Skills component.
- */
-/******  12061bb1-bbca-4b43-8a2f-7af20e9074b3  *******/
 const Skills = () => {
     const onSwiperChange = (Swiper: Swiper) => {
         Swiper.autoplay.start();
@@ -134,7 +114,7 @@ const Skills = () => {
                                                                 slidesPerView={5}
                                                                 loop={true}
                                                                 loopAddBlankSlides={true}
-                                                                loopAdditionalSlides={2}
+                                                                loopAdditionalSlides={20}
                                                                 rewind={true}
                                                                 navigation={false}
                                                                 breakpoints={{
@@ -194,7 +174,7 @@ const Skills = () => {
                                                                 slidesPerView={4}
                                                                 loop={true}
                                                                 loopAddBlankSlides={true}
-                                                                loopAdditionalSlides={2}
+                                                                loopAdditionalSlides={10}
                                                                 rewind={true}
                                                                 navigation={false}
                                                                 breakpoints={{
