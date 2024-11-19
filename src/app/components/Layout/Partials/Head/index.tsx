@@ -35,6 +35,7 @@ const Head = () => {
       <meta property="og:title" content="Link preview title"></meta>
       <meta property="og:description" content="Link preview description" />
       <meta property="og:url" content="Canonical link preview URL"></meta>
+      <link type="text/css" href={"/assets/css/main.css"} rel="stylesheet" />
       <Tags />
     </head>
   );
