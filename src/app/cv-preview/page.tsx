@@ -1,6 +1,6 @@
 import Contact from "@/app/components/Contact";
 
-export const CvPreview = () => {
+const CvPreview = () => {
     return (<>
     
         <Contact />
