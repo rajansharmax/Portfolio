@@ -100,7 +100,7 @@ Feel free to connect with me on any of the following platforms:
 - **GitHub:** [@rajansharmax](https://github.com/rajansharmax) 🧑‍💻  
 - **LinkedIn:** [Rajan Sharma](https://www.linkedin.com/in/rajansharmax/) 💼  
 - **Twitter:** [@rajansharmax](https://twitter.com/rajansharmax) 🐦  
-- **Instagram:** [@rajansharmax](https://www.instagram.com/rajansharmax) 📸  
+- **Instagram:** [@rajansharmax](https://www.instagram.com/rajansharma.x) 📸  
 - **Email:** [rajansharmaa46@gmail.com](mailto:rajansharmaa46@gmail.com) ✉️  
 
 ---
