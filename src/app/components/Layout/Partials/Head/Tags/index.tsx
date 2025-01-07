@@ -17,6 +17,36 @@ const Tags = () => {
           })();`}
       </Script> */}
       {/* <!--End of Tawk.to Script--> */}
+
+      {/* Structured Data (JSON-LD for SEO) */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Rajan Sharma",
+            "jobTitle": "Senior Full Stack Developer",
+            "url": "${process.env.NEXT_PUBLIC_WEBSITE_URL}",
+            "sameAs": [
+              "https://www.linkedin.com/in/rajansharmax/",
+              "https://github.com/rajansharmax",
+              "https://twitter.com/rajansharmax",
+              "https://www.instagram.com/rajansharma.x"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Freelancer"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-9023232046",
+              "contactType": "Customer Support",
+              "areaServed": "IN",
+              "availableLanguage": "English"
+            }
+          }
+        `}
+      </script>
     </>
   );
 };

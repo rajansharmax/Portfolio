@@ -4,8 +4,6 @@ import "./globals.css";
 import BaseLayout from "@/app/components/Layout";
 import Head from "@/app/components/Layout/Partials/Head";
 import NextTopLoader from "nextjs-toploader";
-import Tags from "./components/Layout/Partials/Foot/Tags";
-import BootstrapClient from "./components/BootstrapClient/BootstrapClient";
 import "@/assets/fonts/remixicon/remixicon.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -48,8 +46,6 @@ export default function RootLayout({
           shadow="0 0 10px #25db4a,0 0 5px #25db4a"
         />
         <BaseLayout>{children}</BaseLayout>
-        <Tags />
-        <BootstrapClient />
       </body>
     </html>
   );

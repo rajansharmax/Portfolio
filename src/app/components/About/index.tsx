@@ -1,13 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import CarouselTicker from "@/app/components/CarouselTicker";
+import { routes } from "@/utils/routes";
 
 const About = () => {
     return (
         <>
             <section
                 id="about"
-                className="section-hero-2 position-relative pt-130 pb-3"
+                className="section-hero-2 position-relative pb-3"
             >
                 <div className="container hero-2">
                     <div className="border border-1 rounded-3">
@@ -74,9 +75,8 @@ const About = () => {
                                             </div>
                                         </div>
                                         <Link
-                                            href="assets/resume.pdf"
+                                            href={routes.cvPreview}
                                             className="btn me-2 text-300 ps-0 mt-4"
-                                            target="_blank"
                                         >
                                             <i className="ri-download-line text-primary-2"></i>[
                                             Download my CV ]
