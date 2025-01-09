@@ -15,3 +15,25 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.link-underline {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: linear-gradient(transparent, transparent), linear-gradient(to right, #d946ef, #ec4899);
+    transition: width 0.25s ease;
+  }
+
+  &:hover:after {
+    width: 100%;
+    left: 0;
+    background: linear-gradient(transparent, transparent), linear-gradient(to right, #d946ef, #ec4899);
+  }
+}
