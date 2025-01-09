@@ -1,11 +1,12 @@
+import React from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import BaseLayout from "@/app/components/Layout";
-import Head from "@/app/components/Layout/Partials/Head";
 import NextTopLoader from "nextjs-toploader";
-import "@/assets/fonts/remixicon/remixicon.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import ThemeProvider from "@/components/ThemeProvider";
+import ScrollTop from "@/components/ScrollTop";
+import BaseLayout from "@/components/BaseLayout";
+import Head from "@/components/Layout/Head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,19 +24,13 @@ export const metadata: Metadata = {
   description: "rajansharmax",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <Head />
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning={true}>
         <NextTopLoader
-          color="#25db4a"
+          color="#DE1D8D"
           initialPosition={0.08}
           crawlSpeed={200}
           height={3}
@@ -43,9 +38,14 @@ export default function RootLayout({
           showSpinner={false}
           easing="ease"
           speed={100}
-          shadow="0 0 10px #25db4a,0 0 5px #25db4a"
+          shadow="0 0 10px #DE1D8D,0 0 5px #DE1D8D"
         />
-        <BaseLayout>{children}</BaseLayout>
+        <ScrollTop />
+        <ThemeProvider>
+          <BaseLayout>
+            {children}
+          </BaseLayout>
+        </ThemeProvider>
       </body>
     </html>
   );
