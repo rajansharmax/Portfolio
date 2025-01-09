@@ -1,9 +1,21 @@
 export const routes = {
     home: "/",
     about: "/about",
-    projects: "/projects",
     blog: "/blog",
     resume: "/resume",
     cvPreview: "/cv-preview",
     contact: "/contact",
-}
+    snippets: "/snippets",
+    projects: "/projects",
+    guestbook: "/guestbook",
+    tags: "/tags",
+    uses: "/uses",
+    now: "/now",
+    stats: "/stats",
+    activity: "/activity",
+    recommends: "/recommends",
+    journey: "/journey",
+    quotes: "/quotes",
+    tweets: "/tweets",
+    rss: "/feed.xml",
+};

@@ -1,6 +1,5 @@
 'use client';
 import SectionContainer from "@/components/SectionContainer";
-import NavLinks from "data/NavLinks";
 import siteMetadata from "data/siteMetadata";
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
@@ -8,6 +7,7 @@ import Typewriter from 'typewriter-effect'
 import SearchPage from "@/components/SearchPage";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import DropMenu from "@/components/DropMenu";
+import { NavLinks } from "@/utils";
 
 const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
     const currentPath = usePathname();

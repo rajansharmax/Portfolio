@@ -1,4 +1,3 @@
-// data/seoConfig.ts
 type SEOConfig = {
     [path: string]: {
         title: string;
