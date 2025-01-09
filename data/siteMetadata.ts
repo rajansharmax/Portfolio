@@ -23,6 +23,7 @@ export const siteMetadata = {
     medium: "https://medium.com/@rajansharmax",
     bluesky: "https://bsky.app/rajansharmax",
     whatsapp: "https://wa.me/+919023232046",
+    linktree: "https://linktr.ee/rajansharmax",
     locale: "en-US",
     stickyNav: false,
     defaultTheme: 'system',
