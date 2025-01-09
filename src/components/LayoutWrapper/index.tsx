@@ -29,7 +29,7 @@ const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
                                         options={{
                                             strings: [currentPath],
                                             autoStart: true,
-                                            loop: false,
+                                            loop: true,
                                         }}
                                     />
                                 </div>
