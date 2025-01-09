@@ -18,4 +18,5 @@ export const routes = {
     quotes: "/quotes",
     tweets: "/tweets",
     rss: "/feed.xml",
+    signin: "/sign-in",
 };

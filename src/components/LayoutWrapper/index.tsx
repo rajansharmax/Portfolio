@@ -8,10 +8,12 @@ import SearchPage from "@/components/SearchPage";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import DropMenu from "@/components/DropMenu";
 import { NavLinks } from "@/utils";
+import Handlebars from "../Handlebars";
 
 const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
     const currentPath = usePathname();
     return (<>
+        <Handlebars email={siteMetadata.email} />
         <SectionContainer>
             <div className="flex h-screen flex-col justify-between">
                 <header className="flex items-center justify-between py-10">

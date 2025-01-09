@@ -19,5 +19,6 @@ export const Links: Record<string, Link> = {
     [LinkTitles.quotes]: { href: routes.quotes, title: LinkTitles.quotes },
     [LinkTitles.tweets]: { href: routes.tweets, title: LinkTitles.tweets },
     [LinkTitles.rss]: { href: routes.rss, title: LinkTitles.rss },
-    [LinkTitles.resume]: { href: routes.resume, title: LinkTitles.resume }
+    [LinkTitles.resume]: { href: routes.resume, title: LinkTitles.resume },
+    [LinkTitles.signin]: { href: routes.signin, title: LinkTitles.signin }
 };

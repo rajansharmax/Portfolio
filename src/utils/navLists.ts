@@ -20,6 +20,7 @@ export const NavLists = {
         { name: LinkTitles.quotes, href: routes.quotes },
         { name: LinkTitles.tweets, href: routes.tweets },
         { name: LinkTitles.rss, href: routes.rss },
-        { name: LinkTitles.resume, href: routes.resume }
+        { name: LinkTitles.resume, href: routes.resume },
+        { name: LinkTitles.signin, href: routes.signin }
     ]
 };

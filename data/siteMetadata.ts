@@ -22,6 +22,7 @@ export const siteMetadata = {
     instagram: "https://www.instagram.com/rajansharma.x/",
     medium: "https://medium.com/@rajansharmax",
     bluesky: "https://bsky.app/rajansharmax",
+    whatsapp: "https://wa.me/+919023232046",
     locale: "en-US",
     stickyNav: false,
     defaultTheme: 'system',
