@@ -63,7 +63,7 @@ export default {
         green: colors.emerald,
         gray: colors.neutral,
       },
-      typography: (theme: Config['theme']) => ({
+      typography: (theme: any) => ({
         DEFAULT: {
           css: {
             color: theme('colors.gray.700'),
