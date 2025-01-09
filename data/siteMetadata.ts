@@ -3,6 +3,7 @@ import { keywords } from "./seoKeywords";
 export const siteMetadata = {
     title: "Rajan Sharma - Senior Full Stack Developer",
     author: "Rajan Sharma",
+    username: "rajansharmax",
     headerTitle: "Rajan Sharma",
     description: "Rajan Sharma - Senior Full Stack Developer specializing in PHP, React.js, Node.js, Docker, and more. Building scalable and efficient web applications.",
     keywords: keywords,
@@ -50,7 +51,7 @@ export const siteMetadata = {
         //   posthogProjectApiKey: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
         // },
         googleAnalytics: {
-            googleAnalyticsId: 'GTM-NQX8SHJ4', // e.g. G-XXXXXXX
+            googleAnalyticsId: 'GTM-NQX8SHJ4',
         },
     },
     newsletter: {

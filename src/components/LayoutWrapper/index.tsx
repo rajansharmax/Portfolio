@@ -24,12 +24,12 @@ const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
                         <div>
                             <Link href="/" aria-label={siteMetadata.headerTitle}>
                                 <div className="text-primary-color dark:text-primary-color-dark flex items-center justify-between text-xl font-semibold">
-                                    {`~${currentPath}`}{' '}
+                                    ~
                                     <Typewriter
                                         options={{
-                                            strings: [],
+                                            strings: [currentPath],
                                             autoStart: true,
-                                            loop: true,
+                                            loop: false,
                                         }}
                                     />
                                 </div>
