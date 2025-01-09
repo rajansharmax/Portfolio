@@ -1,9 +1,11 @@
+import { keywords } from "./seoKeywords";
 
 export const siteMetadata = {
     title: "Rajan Sharma - Senior Full Stack Developer",
     author: "Rajan Sharma",
     headerTitle: "Rajan Sharma",
     description: "Rajan Sharma - Senior Full Stack Developer specializing in PHP, React.js, Node.js, Docker, and more. Building scalable and efficient web applications.",
+    keywords: keywords,
     language: "en-us",
     theme: "system",
     siteUrl: "https://rajansharmax.vercel.app",
