@@ -9,6 +9,7 @@ import BaseLayout from "@/components/BaseLayout";
 import Head from "@/components/Layout/Head";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import siteMetadata from "data/siteMetadata";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -66,6 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="dark">
       <Head />
+      <GoogleTagManager gtmId={siteMetadata.analytics.googleAnalytics.googleAnalyticsId} />
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning={true}>
         <NextTopLoader
           color="#DE1D8D"

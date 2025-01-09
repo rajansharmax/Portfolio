@@ -10,10 +10,12 @@ import DropMenu from "@/components/DropMenu";
 import { NavLinks } from "@/utils";
 import Handlebars from "../Handlebars";
 import Footer from "@/components/Layout/Footer";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
     const currentPath = usePathname();
     return (<>
+        <GoogleTagManager gtmId={siteMetadata.analytics.googleAnalytics.googleAnalyticsId} />
         <Handlebars />
             <SectionContainer>
                 <div className="flex h-screen flex-col justify-between">
