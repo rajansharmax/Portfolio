@@ -11,6 +11,7 @@ import { NavLinks } from "@/utils";
 import Handlebars from "../Handlebars";
 import Footer from "@/components/Layout/Footer";
 import { GoogleTagManager } from '@next/third-parties/google'
+import { sendGTMEvent } from '@next/third-parties/google'
 
 const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
     const currentPath = usePathname();
@@ -38,6 +39,7 @@ const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
                             <div className="hidden sm:block">
                                 {NavLinks.map((link) => (
                                     <Link
+                                        onClick={() => sendGTMEvent({ event: 'buttonClicked', value: link.title })}
                                         key={link.title}
                                         href={link.href}
                                         className="link-underline rounded py-1 px-2 text-gray-900 hover:bg-gray-200 dark:text-gray-100 dark:hover:bg-gray-700 sm:py-2 sm:px-3"
