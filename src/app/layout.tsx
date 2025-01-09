@@ -7,6 +7,7 @@ import ThemeProvider from "@/components/ThemeProvider";
 import ScrollTop from "@/components/ScrollTop";
 import BaseLayout from "@/components/BaseLayout";
 import Head from "@/components/Layout/Head";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </BaseLayout>
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
