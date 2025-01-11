@@ -17,5 +17,14 @@ export const LinkTitles = {
     rss: "RSS",
     resume: "Resume",
     contact: "Contact",
-    signin: "Sign In"
+    signin: "Sign In",
+    instagram: "Instagram",
+    youtube: "YouTube",
+    reachme: "Reach Me",
+    linkedin: "LinkedIn",
+    github: "GitHub",
+    facebook: "Facebook",
+    twitter: "Twitter",
+    medium: "Medium",
+    threads: "Threads"
 };

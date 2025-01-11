@@ -1,5 +1,5 @@
-import { Fragment, useState } from 'react';
-import { Menu, MenuButton, Transition } from '@headlessui/react';
+import { Fragment, useEffect, useState } from 'react';
+import { Menu, MenuButton, MenuItems, Transition } from '@headlessui/react';
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
 import {
@@ -24,6 +24,8 @@ import {
 } from '@radix-ui/react-icons';
 import useSound from 'use-sound';
 import Link from 'next/link';
+import { routes } from '@/utils';
+import { FaFacebook, FaGithub, FaLinkedin, FaMedium, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 export default function DropMenu() {
     const [isOpen, setIsOpen] = useState(false);
@@ -32,22 +34,30 @@ export default function DropMenu() {
     const [ThemeSound] = useSound('/static/sounds/page-change.mp3');
 
     const menuItems = [
-        { href: '/', label: 'Home', icon: <HomeIcon /> },
-        { href: '/blog', label: 'Blog', icon: <Pencil1Icon /> },
-        { href: '/snippets', label: 'Snippets', icon: <CodeIcon /> },
-        { href: '/projects', label: 'Projects', icon: <ArchiveIcon /> },
-        { href: '/about', label: 'About', icon: <PersonIcon /> },
-        { href: '/contact', label: 'Contact', icon: <Link2Icon /> },
-        { href: '/tags', label: 'Tags', icon: <FrameIcon /> },
-        { href: '/guestbook', label: 'Guestbook', icon: <ChatBubbleIcon /> },
-        { href: '/uses', label: 'Uses', icon: <LaptopIcon /> },
-        { href: '/now', label: 'Now', icon: <DiscIcon /> },
-        { href: '/stats', label: 'Stats', icon: <BarChartIcon /> },
-        { href: '/journey', label: 'Journey', icon: <RocketIcon /> },
-        { href: '/recommends', label: 'Recommends', icon: <DrawingPinIcon /> },
-        { href: '/quotes', label: 'Quotes', icon: <QuoteIcon /> },
-        { href: '/activity', label: 'Activity', icon: <CalendarIcon /> },
-        { href: '/tweets', label: 'Tweets', icon: <TwitterLogoIcon /> },
+        { href: routes.home, label: 'Home', icon: <HomeIcon /> },
+        { href: routes.blog, label: 'Blog', icon: <Pencil1Icon /> },
+        { href: routes.snippets, label: 'Snippets', icon: <CodeIcon /> },
+        { href: routes.projects, label: 'Projects', icon: <ArchiveIcon /> },
+        { href: routes.about, label: 'About', icon: <PersonIcon /> },
+        { href: routes.contact, label: 'Contact', icon: <Link2Icon /> },
+        { href: routes.tags, label: 'Tags', icon: <FrameIcon /> },
+        { href: routes.guestbook, label: 'Guestbook', icon: <ChatBubbleIcon /> },
+        { href: routes.uses, label: 'Uses', icon: <LaptopIcon /> },
+        { href: routes.now, label: 'Now', icon: <DiscIcon /> },
+        { href: routes.stats, label: 'Stats', icon: <BarChartIcon /> },
+        { href: routes.journey, label: 'Journey', icon: <RocketIcon /> },
+        { href: routes.recommends, label: 'Recommends', icon: <DrawingPinIcon /> },
+        { href: routes.quotes, label: 'Quotes', icon: <QuoteIcon /> },
+        { href: routes.activity, label: 'Activity', icon: <CalendarIcon /> },
+        { href: routes.tweets, label: 'Tweets', icon: <TwitterLogoIcon /> },
+        { href: routes.instagram, label: 'Instagram', icon: <EnterIcon /> },
+        { href: routes.youtube, label: 'Youtube', icon: <FaYoutube /> },
+        // { href: routes.linkedin, label: 'Linkedin', icon: <FaLinkedin /> },
+        // { href: routes.github, label: 'Github', icon: <FaGithub /> },
+        // { href: routes.facebook, label: 'Facebook', icon: <FaFacebook /> },
+        // { href: routes.twitter, label: 'Twitter', icon: <FaTwitter /> },
+        // { href: routes.medium, label: 'Medium', icon: <FaMedium /> },
+        // { href: routes.threads, label: 'Threads', icon: <EnterIcon /> },
     ];
 
     return (
@@ -85,7 +95,7 @@ export default function DropMenu() {
                     ThemeSound();
                 }}
             >
-                <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-zinc-300 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:divide-zinc-700 dark:bg-zinc-800">
+                <MenuItems className="absolute right-0 mt-2 w-56 max-h-80 overflow-y-auto origin-top-right divide-y divide-zinc-300 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:divide-zinc-700 dark:bg-zinc-800">
                     <div className="py-1">
                         {menuItems.map(({ href, label, icon }, index) => (
                             <Menu.Item key={index}>
@@ -131,8 +141,9 @@ export default function DropMenu() {
                             )}
                         </Menu.Item>
                     </div>
-                </Menu.Items>
+                </MenuItems>
             </Transition>
         </Menu>
+
     );
 }

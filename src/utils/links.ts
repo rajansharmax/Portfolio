@@ -20,5 +20,14 @@ export const Links: Record<string, Link> = {
     [LinkTitles.tweets]: { href: routes.tweets, title: LinkTitles.tweets },
     [LinkTitles.rss]: { href: routes.rss, title: LinkTitles.rss },
     [LinkTitles.resume]: { href: routes.resume, title: LinkTitles.resume },
-    [LinkTitles.signin]: { href: routes.signin, title: LinkTitles.signin }
+    [LinkTitles.signin]: { href: routes.signin, title: LinkTitles.signin },
+    [LinkTitles.instagram]: { href: routes.instagram, title: LinkTitles.instagram },
+    [LinkTitles.youtube]: { href: routes.youtube, title: LinkTitles.youtube },
+    [LinkTitles.reachme]: { href: routes.reachme, title: LinkTitles.reachme },
+    [LinkTitles.linkedin]: { href: routes.linkedin, title: LinkTitles.linkedin },
+    [LinkTitles.github]: { href: routes.github, title: LinkTitles.github },
+    [LinkTitles.facebook]: { href: routes.facebook, title: LinkTitles.facebook },
+    [LinkTitles.twitter]: { href: routes.twitter, title: LinkTitles.twitter },
+    [LinkTitles.medium]: { href: routes.medium, title: LinkTitles.medium },
+    [LinkTitles.threads]: { href: routes.threads, title: LinkTitles.threads }
 };
