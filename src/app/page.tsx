@@ -1,6 +1,5 @@
 'use client';
 import ButtonLink from "@/components/ButtonLink";
-import MapSection from "@/components/MapSection";
 import { routes } from "@/utils";
 import siteMetadata from "data/siteMetadata";
 import { RoughNotation } from "react-rough-notation";
@@ -126,7 +125,6 @@ const App = () => {
           </div>
         </div>
       </div>
-      <MapSection />
     </>
   );
 };
