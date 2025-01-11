@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useState } from 'react';
 import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react';
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
@@ -25,7 +25,7 @@ import {
 import useSound from 'use-sound';
 import Link from 'next/link';
 import { routes } from '@/utils';
-import { FaFacebook, FaGithub, FaLinkedin, FaMedium, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
 
 export default function DropMenu() {
     const [isOpen, setIsOpen] = useState(false);
