@@ -42,7 +42,7 @@ const MapSection = () => {
                 <div className="absolute inset-0 z-30 opacity-30 dark:opacity-50 bg-gradient-to-tr from-transparent to-neutral-200 dark:to-neutral-800" />
                 <div className="absolute z-20 w-[1200px] h-[1200px] transition-transform delay-1000 duration-1000 grayscale dark:brightness-50">
                     {location && (
-                        // @ts-ignore
+                        // @ts-expect-error Type 'string' is not assignable to type 'string | undefined'.
                         <LoadScript googleMapsApiKey={token}>
                             <GoogleMap
                                 mapContainerStyle={containerStyle}
