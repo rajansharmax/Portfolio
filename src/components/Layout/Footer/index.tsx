@@ -4,7 +4,7 @@ import { socialLinks } from "@/utils";
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-100 dark:bg-gray-900 py-6">
+        <footer className="py-6">
             <div className="container mx-auto px-4 flex flex-col items-center">
                 <div className="mb-6 flex flex-wrap justify-center gap-4">
                     {socialLinks.map(({ icon: Icon, href, label }, index) => (

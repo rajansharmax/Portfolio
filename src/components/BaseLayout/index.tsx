@@ -1,4 +1,4 @@
-import LayoutWrapper from "@/components/LayoutWrapper";
+import LayoutWrapper from "@/components/Layout/LayoutWrapper";
 
 const BaseLayout = ({ children }: { children: React.ReactNode }) => {
     return(<>
