@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from 'react';
-import { Menu, MenuButton, MenuItems, Transition } from '@headlessui/react';
+import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react';
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
 import {
@@ -98,7 +98,7 @@ export default function DropMenu() {
                 <MenuItems className="absolute right-0 mt-2 w-56 max-h-80 overflow-y-auto origin-top-right divide-y divide-zinc-300 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:divide-zinc-700 dark:bg-zinc-800">
                     <div className="py-1">
                         {menuItems.map(({ href, label, icon }, index) => (
-                            <Menu.Item key={index}>
+                            <MenuItem key={index}>
                                 {({ active }) => (
                                     <Link href={href}>
                                         <div
@@ -116,14 +116,14 @@ export default function DropMenu() {
                                         </div>
                                     </Link>
                                 )}
-                            </Menu.Item>
+                            </MenuItem>
                         ))}
                     </div>
 
                     <div className="py-1">
-                        <Menu.Item>
+                        <MenuItem>
                             {({ active }) => (
-                                <Link href="/sign-in">
+                                <Link href={routes.signin}>
                                     <div
                                         className={classNames(
                                             active
@@ -139,7 +139,7 @@ export default function DropMenu() {
                                     </div>
                                 </Link>
                             )}
-                        </Menu.Item>
+                        </MenuItem>
                     </div>
                 </MenuItems>
             </Transition>

@@ -7,8 +7,12 @@ import DropMenu from "@/components/DropMenu";
 import { NavLinks } from "@/utils";
 import { sendGTMEvent } from '@next/third-parties/google';
 import siteMetadata from "data/siteMetadata";
+import useSound from "use-sound";
 
 const Header = ({ currentPath }: { currentPath: string }) => {
+
+    const [ThemeSound] = useSound('/static/sounds/link-change.mp3');
+
     return (
         <header className="flex items-center justify-between py-10">
             <div>
@@ -33,6 +37,7 @@ const Header = ({ currentPath }: { currentPath: string }) => {
                             key={link.title}
                             href={link.href}
                             className="link-underline rounded py-1 px-2 text-gray-900 hover:bg-gray-200 dark:text-gray-100 dark:hover:bg-gray-700 sm:py-2 sm:px-3"
+                            onClickCapture={() => ThemeSound()}
                         >
                             {link.title}
                         </Link>
