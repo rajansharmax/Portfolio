@@ -6,7 +6,7 @@ import { GoogleTagManager } from '@next/third-parties/google';
 import Main from "@/components/Layout/Main";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
-import Handlebars from "@/components/Handlebars";
+import Handlebars from "@/components/Common/Handlebars";
 
 const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
     const currentPath = usePathname();

@@ -4,12 +4,13 @@ import localFont from "next/font/local";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
 import ThemeProvider from "@/components/ThemeProvider";
-import ScrollTop from "@/components/ScrollTop";
+import ScrollTop from "@/components/Common/ScrollTop";
 import BaseLayout from "@/components/BaseLayout";
 import Head from "@/components/Layout/Head";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import siteMetadata from "data/siteMetadata";
 import { GoogleTagManager } from '@next/third-parties/google'
+import ScrollLinked from "@/components/Common/ScrollLinked";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -81,6 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           shadow="0 0 10px #DE1D8D,0 0 5px #DE1D8D"
         />
         <ScrollTop />
+        <ScrollLinked />
         <ThemeProvider>
           <BaseLayout>
             {children}

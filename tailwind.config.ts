@@ -62,6 +62,10 @@ export default {
         'background-color': '#000',
         green: colors.emerald,
         gray: colors.neutral,
+        pink: colors.fuchsia,
+        red: colors.rose,
+        orange: colors.orange,
+        blue: colors.blue,
       },
       typography: (theme: any) => ({
         DEFAULT: {
