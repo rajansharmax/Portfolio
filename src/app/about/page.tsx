@@ -157,11 +157,11 @@ const About = () => {
                             <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mt-6">Hire Me</h2>
                         </RoughNotation>
                         <p className="text-lg md:text-xl leading-relaxed text-gray-700 dark:text-gray-300 mt-4">
-                            I'm always open to exciting opportunities and collaborations. If you have a project in mind or want to work with me, feel free to reach out!
+                            I&apos;m always open to exciting opportunities and collaborations. If you have a project in mind or want to work with me, feel free to reach out!
                         </p>
                         <div className="mt-4">
                             <a
-                                href={siteMetadata.urls.contact}
+                                href={'mailto:' + rajansharmax.email}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block px-8 py-3 rounded-full border-2 border-yellow-400 bg-transparent text-yellow-400 font-medium text-lg transition-all hover:bg-yellow-400 hover:text-white"

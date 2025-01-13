@@ -1,5 +1,6 @@
 export const rajansharmax = {
     name: "Rajan Sharma",
+    email: "rajansharmaa46@gmail.com",
     occupation: "Senior Software Developer",
     handle: "rajansharmax",
     image: "https://rajansharmax.vercel.app/static/images/rajansharmax.png",
