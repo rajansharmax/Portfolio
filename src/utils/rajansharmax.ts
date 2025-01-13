@@ -9,6 +9,18 @@ export const rajansharmax = {
     twitter: "https://twitter.com/rajansharmax",
     linkedin: "https://www.linkedin.com/in/rajansharmax/",
     avatar: "/assets/images/rajansharmax.jpg",
+    current: {
+        title: "Senior Software Developer",
+        company: {
+            name: "GeekyBones Lab Pvt Ltd.",
+            url: "https://www.geekybones.com",
+            location: "Chandigarh, India",
+            range: "2024-03-01 - Present",
+            startDate: new Date('2024-03-01'),
+            endDate: new Date(),
+        },
+        location: "Chandigarh, India",
+    }
 }
 
 export const experienceData = [

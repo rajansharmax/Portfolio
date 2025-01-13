@@ -8,7 +8,7 @@ import { calculateExperienceDuration } from '@/helper';
 import FeaturedProjects from '@/components/FeaturedProjects';
 
 const About = () => {
-    const company = siteMetadata.company.name;
+    const company = rajansharmax.current.company.name;
 
     return (
         <div className="py-8">
@@ -67,13 +67,13 @@ const About = () => {
                         >
                             Hi there! I’m currently immersed in crafting innovative web applications and building efficient data pipelines at{' '}
                             <Link
-                                href={siteMetadata.company.website}
+                                href={rajansharmax.current.company.url}
                                 target="_blank"
                                 rel="referer"
-                                aria-label={siteMetadata.company.name}
+                                aria-label={rajansharmax.current.company.name}
                                 className="text-blue-300 hover:text-white transition-colors"
                             >
-                                {siteMetadata.company.name}
+                                {rajansharmax.current.company.name}
                             </Link>
                         </RoughNotation>
                         . My passion lies in developing high-impact digital experiences, and I thrive on tackling intricate technical challenges to create intuitive user interfaces and powerful backend systems that drive business success.
@@ -149,7 +149,7 @@ const About = () => {
                     <div className="mt-8 text-center">
                         <RoughNotation
                             type="highlight"
-                            color="#FFD700"
+                            color="#f90830"
                             animationDelay={500}
                             animationDuration={2000}
                             show={true}
