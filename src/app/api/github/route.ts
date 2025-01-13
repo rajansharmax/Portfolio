@@ -20,7 +20,7 @@ export async function GET(): Promise<Response> {
             status: 200,
             headers: { "Content-Type": "application/json" },
         });
-    } catch (error) {
+    } catch (error: any) {
         return new Response(
             JSON.stringify({ error: "Error fetching repositories", message: error.message }),
             { status: 500, headers: { "Content-Type": "application/json" } }
