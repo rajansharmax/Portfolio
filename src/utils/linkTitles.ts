@@ -2,6 +2,7 @@ export const LinkTitles = {
     home: "Home",
     blog: "Blog",
     snippets: "Snippets",
+    hireMe: "Hire Me",
     projects: "Projects",
     about: "About",
     guestbook: "Guestbook",

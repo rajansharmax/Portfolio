@@ -5,8 +5,12 @@ import { Link } from "./types";
 export const NavLinks: Link[] = [
     { href: routes.home, title: LinkTitles.home },
     { href: routes.blog, title: LinkTitles.blog },
-    { href: routes.snippets, title: LinkTitles.snippets },
+    { href: routes.hireMe, title: LinkTitles.hireMe },
     { href: routes.projects, title: LinkTitles.projects },
     { href: routes.about, title: LinkTitles.about },
     { href: routes.guestbook, title: LinkTitles.guestbook },
 ];
+
+export const getLinkTitle = (key: string): string => {
+    return NavLinks.find((link) => link.href === key)?.title ?? "";
+};

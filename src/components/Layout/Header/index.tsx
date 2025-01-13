@@ -3,13 +3,17 @@ import Link from "next/link";
 import Typewriter from 'typewriter-effect';
 import SearchPage from "@/components/SearchPage";
 import ThemeSwitch from "@/components/ThemeSwitch";
-import DropMenu from "@/components/DropMenu";
-import { NavLinks } from "@/utils";
+import DropMenu from "@/components/Common/DropMenu";
+import { getLinkTitle, NavLinks } from "@/utils";
 import { sendGTMEvent } from '@next/third-parties/google';
 import siteMetadata from "data/siteMetadata";
 import useSound from "use-sound";
 
-const Header = ({ currentPath }: { currentPath: string }) => {
+interface HeaderProps {
+    currentPath: string;
+}
+
+const Header = ({ currentPath }: HeaderProps) => {
 
     const [ThemeSound] = useSound('/static/sounds/link-change.mp3');
 
@@ -21,7 +25,7 @@ const Header = ({ currentPath }: { currentPath: string }) => {
                         ~
                         <Typewriter
                             options={{
-                                strings: [currentPath],
+                                strings: [getLinkTitle(currentPath) ?? currentPath],
                                 autoStart: true,
                                 loop: true,
                             }}
