@@ -11,7 +11,7 @@ const About = () => {
     const company = rajansharmax.current.company.name;
 
     return (
-        <div className="py-8">
+        <div className="pb-8">
             <div className="text-center pt-6 pb-8">
                 <h1
                     className="text-4xl font-extrabold leading-tight tracking-wide sm:text-5xl sm:leading-none"

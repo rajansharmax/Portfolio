@@ -8,6 +8,7 @@ export const rajansharmax = {
     github: "https://github.com/rajansharmax",
     twitter: "https://twitter.com/rajansharmax",
     linkedin: "https://www.linkedin.com/in/rajansharmax/",
+    stackOverflow: "https://stackoverflow.com/users/15540332/rajansharmax",
     avatar: "/assets/images/rajansharmax.jpg",
     current: {
         title: "Senior Software Developer",

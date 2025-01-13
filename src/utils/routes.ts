@@ -5,6 +5,7 @@ export const routes = {
     resume: "/resume",
     cvPreview: "/cv-preview",
     contact: "/contact",
+    hireMe: "/hire-me",
     snippets: "/snippets",
     projects: "/projects",
     guestbook: "/guestbook",

@@ -21,6 +21,7 @@ import {
     RocketIcon,
     ChatBubbleIcon,
     EnterIcon,
+    MagicWandIcon,
 } from '@radix-ui/react-icons';
 import useSound from 'use-sound';
 import Link from 'next/link';
@@ -36,6 +37,7 @@ export default function DropMenu() {
     const menuItems = [
         { href: routes.home, label: 'Home', icon: <HomeIcon /> },
         { href: routes.blog, label: 'Blog', icon: <Pencil1Icon /> },
+        { href: routes.hireMe, label: 'Hire Me', icon: <MagicWandIcon /> },
         { href: routes.snippets, label: 'Snippets', icon: <CodeIcon /> },
         { href: routes.projects, label: 'Projects', icon: <ArchiveIcon /> },
         { href: routes.about, label: 'About', icon: <PersonIcon /> },
