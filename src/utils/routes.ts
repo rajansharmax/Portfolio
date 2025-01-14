@@ -9,6 +9,7 @@ export const routes = {
     snippets: "/snippets",
     projects: "/projects",
     guestbook: "/guestbook",
+    siteMap: "/site-map",
     tags: "/tags",
     uses: "/uses",
     now: "/now",
