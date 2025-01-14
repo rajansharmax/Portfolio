@@ -16,6 +16,8 @@ export const Links: Record<string, Link> = {
     [routes.stats]: { href: routes.stats, title: LinkTitles.stats },
     [routes.activity]: { href: routes.activity, title: LinkTitles.activity },
     [routes.recommends]: { href: routes.recommends, title: LinkTitles.recommends },
+    [routes.contact]: { href: routes.contact, title: LinkTitles.contact },
+    [routes.siteMap]: { href: routes.siteMap, title: LinkTitles.siteMap },
     [routes.journey]: { href: routes.journey, title: LinkTitles.journey },
     [routes.quotes]: { href: routes.quotes, title: LinkTitles.quotes },
     [routes.tweets]: { href: routes.tweets, title: LinkTitles.tweets },

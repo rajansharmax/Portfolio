@@ -6,6 +6,7 @@ export const LinkTitles = {
     projects: "Projects",
     about: "About",
     guestbook: "Guestbook",
+    siteMap: "Site Map",
     tags: "Tags",
     uses: "Uses",
     now: "Now",
