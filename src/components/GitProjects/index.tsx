@@ -100,15 +100,17 @@ const GitProjects = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
                 >
-                    <RoughNotation
-                        type="highlight"
-                        color="#f9a825"
-                        show={true}
-                        animationDelay={300}
-                        animationDuration={2500}
-                    >
-                        Work. Hobby. Open Source.
-                    </RoughNotation>
+                    <div className="relative inline-block">
+                        <RoughNotation
+                            type="highlight"
+                            color="#f9a825"
+                            show={true}
+                            animationDelay={300}
+                            animationDuration={2500}
+                            >
+                            Work. Hobby. Open Source.
+                        </RoughNotation>
+                    </div>
                 </motion.h1>
 
                 <motion.div
@@ -140,19 +142,24 @@ const GitProjects = () => {
 
     return (
         <div className="space-y-12 pb-10">
-            <h1
+            <motion.h1
                 className="text-4xl md:text-6xl sm:text-6xl xs:text-4xl font-extrabold text-gradient bg-clip-text text-center"
+                initial={{ opacity: 0, y: -30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7 }}
             >
-                <RoughNotation
-                    type="highlight"
-                    color="#f9a825"
-                    show={true}
-                    animationDelay={300}
-                    animationDuration={2500}
-                >
-                    Work. Hobby. Open Source.
-                </RoughNotation>
-            </h1>
+                <div className="relative inline-block">
+                    <RoughNotation
+                        type="highlight"
+                        color="#f9a825"
+                        show={true}
+                        animationDelay={300}
+                        animationDuration={2500}
+                    >
+                        Work. Hobby. Open Source.
+                    </RoughNotation>
+                </div>
+            </motion.h1>
 
             <motion.div
                 className="relative text-xl text-gray-600 dark:text-gray-300 text-center"
