@@ -1,8 +1,9 @@
 'use client';
 import { RoughNotation } from "react-rough-notation";
-import { AiFillStar, AiOutlineLink } from "react-icons/ai";
+import { AiFillStar, AiOutlineLink, AiFillEye } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import axios from 'axios';
 
 interface Project {
     id: number;
@@ -10,6 +11,13 @@ interface Project {
     description: string | null;
     html_url: string;
     stargazers_count: number;
+    watchers_count: number;
+    visibility: string;
+    watchers: number;
+    created_at: string;
+    updated_at: string;
+    tags: string[];
+    topics: string[];
 }
 
 interface GitHubRepo {
@@ -18,7 +26,13 @@ interface GitHubRepo {
     description: string | null;
     html_url: string;
     stargazers_count: number;
-    tags: string[];
+    watchers_count: number;
+    visibility: string;
+    watchers: number;
+    created_at: string;
+    updated_at: string;
+    tags_url: string;
+    topics: string[];
 }
 
 const GitProjects = () => {
@@ -27,17 +41,48 @@ const GitProjects = () => {
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                const response = await fetch('https://api.github.com/users/rajansharmax/repos');
-                const data: GitHubRepo[] = await response.json();
-                const filteredProjects: Project[] = data.sort((a, b) => b.stargazers_count - a.stargazers_count).map((repo) => ({
-                    id: repo.id,
-                    name: repo.name,
-                    description: repo.description,
-                    html_url: repo.html_url,
-                    stargazers_count: repo.stargazers_count,
-                    tags: repo.tags || [],
+                const response = await axios.get('https://api.github.com/users/rajansharmax/repos');
+                const data: GitHubRepo[] = response.data;
+
+                const projectsWithTags = await Promise.all(data.map(async (repo) => {
+                    try {
+                        const tagsResponse = await axios.get(repo.tags_url);
+                        const tags = tagsResponse.data.map((tag: { name: string }) => tag.name);
+                        return {
+                            id: repo.id,
+                            name: repo.name,
+                            description: repo.description,
+                            html_url: repo.html_url,
+                            stargazers_count: repo.stargazers_count,
+                            watchers_count: repo.watchers_count,
+                            visibility: repo.visibility,
+                            watchers: repo.watchers,
+                            topics: repo.topics,
+                            created_at: new Date(repo.created_at).toLocaleDateString(),
+                            updated_at: new Date(repo.updated_at).toLocaleDateString(),
+                            tags: tags || [],
+                        };
+                    } catch (error) {
+                        console.error(`Error fetching tags for repo ${repo.name}:`, error);
+                        return {
+                            id: repo.id,
+                            name: repo.name,
+                            description: repo.description,
+                            html_url: repo.html_url,
+                            stargazers_count: repo.stargazers_count,
+                            watchers_count: repo.watchers_count,
+                            visibility: repo.visibility,
+                            watchers: repo.watchers,
+                            topics: repo.topics ?? [],
+                            created_at: new Date(repo.created_at).toLocaleDateString(),
+                            updated_at: new Date(repo.updated_at).toLocaleDateString(),
+                            tags: [],
+                        };
+                    }
                 }));
-                setProjects(filteredProjects);
+
+                const sortedProjects = projectsWithTags.sort((a, b) => b.stargazers_count - a.stargazers_count);
+                setProjects(sortedProjects);
             } catch (error) {
                 console.error("Error fetching GitHub repos:", error);
             }
@@ -134,7 +179,7 @@ const GitProjects = () => {
             </motion.div>
 
             <motion.div
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
                 initial="hidden"
                 animate="visible"
                 variants={{
@@ -148,7 +193,7 @@ const GitProjects = () => {
                         href={project.html_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 p-6 flex flex-col justify-between h-full"
+                        className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 p-4 flex flex-col justify-between h-full"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         variants={{
@@ -177,9 +222,30 @@ const GitProjects = () => {
                                 {project.description || "No description provided."}
                             </motion.p>
 
-                            {/* Stars Count */}
+                            {/* Tags and Topics */}
+                            {project.topics.length > 0 && <div className="flex flex-wrap gap-2">
+                                {project.topics.map((topic) => (
+                                    <span
+                                        key={topic}
+                                        className="text-xs font-medium px-2 py-1 bg-yellow-200 dark:bg-yellow-700 text-gray-800 dark:text-gray-200 rounded-full"
+                                    >
+                                        {topic}
+                                    </span>
+                                ))}
+                            </div>}
+
+                            <div className="flex justify-between items-center mt-4 text-gray-600 dark:text-gray-400">
+                                <div className="flex items-center space-x-2">
+                                    <AiFillEye className="text-xl" />
+                                    <span>{project.watchers_count} Watchers</span>
+                                </div>
+                                <span className="text-sm font-medium uppercase bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded-full">
+                                    {project.visibility}
+                                </span>
+                            </div>
+
                             <motion.div
-                                className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 mt-auto"
+                                className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 mt-2"
                                 whileHover={{ scale: 1.1 }}
                                 transition={{ duration: 0.3 }}
                             >
