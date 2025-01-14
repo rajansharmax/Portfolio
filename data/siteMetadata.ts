@@ -117,6 +117,10 @@ export const siteMetadata = {
             lang: "en",
         },
     },
+    google: {
+        analyticsId: "GTM-NQX8SHJ4",
+        googleSiteVerification: "DhwdQr5sEESdZz91NlRFS8HcK0IoeL701NrlgInfM5I",
+    },
     search: {
         provider: "kbar", // kbar or algolia
         kbarConfig: {

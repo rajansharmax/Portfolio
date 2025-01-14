@@ -46,6 +46,7 @@ export const metadata: Metadata = {
       'application/rss+xml': `${siteMetadata.siteUrl}/feed.xml`,
     },
   },
+  verification: { google: siteMetadata.google.googleSiteVerification },
   robots: {
     index: true,
     follow: true,
