@@ -10,6 +10,7 @@ export const rajansharmax = {
     linkedin: "https://www.linkedin.com/in/rajansharmax/",
     stackOverflow: "https://stackoverflow.com/users/15540332/rajansharmax",
     avatar: "/assets/images/rajansharmax.jpg",
+    resume: "https://www.icloud.com/iclouddrive/0ef8_lNwV9exnRIM_X5wwqDsw#RAJAN-9023232046",
     current: {
         title: "Senior Software Developer",
         company: {
