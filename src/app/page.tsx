@@ -35,7 +35,8 @@ const App = () => {
                 />
               </div>
               <div>
-                <p className="text-lg font-semibold text-gray-800 dark:text-gray-100">Hey, I&apos;m
+                <p className="text-lg font-semibold text-gray-800 dark:text-gray-100">
+                  Hey, I&apos;m
                   <strong className="text-primary-color-500 dark:text-primary-color-dark-500">
                     <Typewriter
                       options={{
@@ -47,12 +48,12 @@ const App = () => {
                   </strong>
                 </p>
                 <p className="text-gray-600 dark:text-gray-300">I started my journey as a software developer in 2022.</p>
-                <p className="text-gray-600 dark:text-gray-300">Currently, I&apos;m working as a {rajansharmax.current.title} at <strong>
-                  <Link href={rajansharmax.current.company.url} target="_blank" className="text-blue-500 hover:text-blue-600">
+                <p className="text-gray-600 dark:text-gray-300">Currently, I&apos;m working as a <span className="special-underline-new">{rajansharmax.current.title}</span> at <strong>
+                  <Link href={rajansharmax.current.company.url} target="_blank" className="special-underline-new text-blue-500 hover:text-blue-600">
                     {rajansharmax.current.company.name}
                   </Link></strong>.
                 </p>
-                <p className="text-gray-600 dark:text-gray-300">I&apos;m originally from India and currently living in <strong>Chandigarh, India</strong>.</p>
+                <p className="text-gray-600 dark:text-gray-300">I&apos;m originally from India and currently living in <strong className="special-underline-new">Chandigarh, India</strong>.</p>
                 <p className="text-gray-600 dark:text-gray-300">
                   I love <strong><a href={siteMetadata.siteUrl} target="_blank" className="text-blue-500 hover:text-blue-600">connecting</a></strong> with fellow tech enthusiasts. When I&apos;m not working, you&apos;ll find me exploring new technologies, working on personal projects, or solving problems.
                 </p>
@@ -104,7 +105,7 @@ const App = () => {
             </span>
           </h1>
           <h2 className="prose pt-5 text-lg text-gray-600 dark:text-gray-300">
-            {`Welcome to my digital space! As a full-stack developer with expertise in all web technologies, I specialize in crafting seamless and scalable applications. From front-end to back-end, I build solutions that are efficient, secure, and tailored to meet your business needs. Whether it's creating stunning user interfaces or developing robust APIs, I bring your ideas to life with the latest technologies.`}
+            Welcome to my digital space! As a <strong className="special-underline-new">full-stack developer</strong> with expertise in all web technologies, I specialize in crafting seamless and scalable applications. From front-end to back-end, I build solutions that are efficient, secure, and tailored to meet your business needs. Whether it&apos;s creating stunning user interfaces or developing robust APIs, I bring your ideas to life with the latest technologies.
           </h2>
           <div className="pt-5 text-lg leading-7 text-slate-600 dark:text-slate-300">
             <p>
@@ -158,7 +159,7 @@ const App = () => {
               textColor="text-gray-900 dark:text-gray-100"
             />
             <ButtonLink
-              href={routes.blog}
+              href={routes.about}
               icon={
                 <motion.svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +185,7 @@ const App = () => {
               textColor="text-gray-900 dark:text-gray-100"
             />
             <ButtonLink
-              href={routes.resume}
+              href={routes.hireMe}
               icon={
                 <motion.svg
                   xmlns="http://www.w3.org/2000/svg"
