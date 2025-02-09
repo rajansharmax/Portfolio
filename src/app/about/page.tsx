@@ -120,7 +120,11 @@ const About = () => {
                         </RoughNotation>
                         {experienceData.map((experience, index) => (
                             <div key={index} className="mt-6">
-                                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">{experience.title}</h3>
+                                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                                    <span className='special-underline-new'>
+                                        {experience.title}
+                                    </span>
+                                </h3>
                                 <p className="text-md text-gray-600 dark:text-gray-300">
                                     <a
                                         href={experience.url}
